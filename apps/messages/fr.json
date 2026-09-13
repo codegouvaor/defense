@@ -1,0 +1,1015 @@
+{
+  "meta": {
+    "defaultTitle": "Ministère de la Défense et des Armées",
+    "suffix": "Ministère de la Défense et des Armées",
+    "description": "Le portail officiel du Ministère de la Défense et des Armées de la République d'Astoria.",
+    "searchPlaceholder": "Rechercher"
+  },
+  "home": {
+    "metaTitle": "Ministère de la Défense et des Armées — République d'Astoria",
+    "hero": {
+      "kicker": "Ministère de la Défense et des Armées",
+      "title": "Défendre la République",
+      "lead": "Protéger la République, préserver sa souveraineté et garantir sa capacité à défendre ses citoyens et ses intérêts.",
+      "ctaPolicy": "Politique de défense",
+      "ctaArmedForces": "Découvrir les Armées",
+      "searchTitle": "Rechercher sur le portail",
+      "searchLabel": "Rechercher",
+      "searchPlaceholder": "Votre recherche (ex. : recrutement, cyberdéfense…)",
+      "popularLabel": "Recherches fréquentes :",
+      "popular": {
+        "recrutement": "Recrutement",
+        "reserve": "Réserve",
+        "cyberdefense": "Cyberdéfense",
+        "budget": "Budget de la défense"
+      }
+    },
+    "news": {
+      "kicker": "Actualités",
+      "title": "L'actualité de la Défense",
+      "lead": "Les dernières informations et les prochains rendez-vous du ministère.",
+      "featured": {
+        "tag": "Actualité",
+        "title": "Programmation militaire : renforcer les capacités de la Nation",
+        "text": "Le ministère présente les grandes orientations de la programmation militaire, au service de la souveraineté et de la protection de la République.",
+        "date": "12 septembre 2026"
+      },
+      "secondary": {
+        "cyber": {
+          "tag": "Communiqué",
+          "title": "La cyberdéfense, une priorité de la stratégie nationale",
+          "date": "8 septembre 2026"
+        },
+        "reserve": {
+          "tag": "Actualité",
+          "title": "La réserve opérationnelle : un engagement citoyen au service de la défense",
+          "date": "2 septembre 2026"
+        }
+      },
+      "event": {
+        "tag": "Rendez-vous",
+        "title": "Salon international de la défense et de la sécurité",
+        "date": "Du 14 au 17 octobre 2026"
+      },
+      "cta": {
+        "actualites": "Actualités",
+        "communiques": "Communiqués",
+        "agenda": "Agenda"
+      }
+    },
+    "priorities": {
+      "kicker": "Stratégie",
+      "title": "Les priorités de défense",
+      "lead": "Quatre orientations guident la politique de défense de la République.",
+      "items": {
+        "souverainete": {
+          "title": "Souveraineté",
+          "desc": "Garantir l'autonomie stratégique de la République et sa liberté d'appréciation et d'action."
+        },
+        "protection": {
+          "title": "Protection",
+          "desc": "Protéger le territoire, la population et les intérêts nationaux."
+        },
+        "anticipation": {
+          "title": "Anticipation",
+          "desc": "Identifier et comprendre les menaces futures pour éclairer la décision."
+        },
+        "resilience": {
+          "title": "Résilience",
+          "desc": "Maintenir la continuité de l'État et des capacités de défense face aux crises."
+        }
+      }
+    },
+    "armedForces": {
+      "kicker": "Composantes",
+      "title": "Les Armées",
+      "lead": "L'instrument militaire de la défense de la République.",
+      "text": "Les Armées constituent l'instrument militaire de la défense de la République. Leur organisation et leurs activités sont présentées sur le portail des Armées.",
+      "cta": "Découvrir les Armées",
+      "items": {
+        "armeeDeTerre": {
+          "desc": "La composante terrestre des forces armées."
+        },
+        "marine": {
+          "desc": "La puissance maritime au service de la Nation."
+        },
+        "airEspace": {
+          "desc": "La maîtrise du ciel et de l'espace."
+        },
+        "interarmees": {
+          "desc": "Le commandement et les services communs des forces."
+        }
+      }
+    },
+    "operations": {
+      "kicker": "Engagement",
+      "title": "Les opérations",
+      "lead": "Les forces armées au service de la défense et de la sécurité de la République.",
+      "items": {
+        "nationales": {
+          "title": "Opérations nationales",
+          "desc": "Protection du territoire, sécurité et secours aux populations."
+        },
+        "exterieures": {
+          "title": "Opérations extérieures",
+          "desc": "Les engagements des forces au-delà des frontières."
+        },
+        "exercices": {
+          "title": "Exercices et entraînement",
+          "desc": "La préparation opérationnelle des forces."
+        },
+        "cooperation": {
+          "title": "Coopérations militaires",
+          "desc": "Les partenariats et les coopérations entre armées."
+        }
+      }
+    },
+    "intelligence": {
+      "kicker": "Protection",
+      "title": "Renseignement & Cyberdéfense",
+      "lead": "Comprendre les menaces et protéger la Nation dans le cyberespace.",
+      "cta": "Tout sur le renseignement et la cyberdéfense",
+      "renseignement": {
+        "kicker": "Comprendre",
+        "title": "Renseignement militaire",
+        "lead": "Comprendre les menaces, anticiper les crises et éclairer la décision stratégique.",
+        "items": {
+          "missions": {
+            "label": "Les missions du renseignement militaire"
+          },
+          "cooperation": {
+            "label": "La coopération interministérielle"
+          }
+        }
+      },
+      "cyber": {
+        "kicker": "Protéger",
+        "title": "Cyberdéfense",
+        "lead": "Protéger les systèmes, réseaux et communications concourant à la défense nationale.",
+        "items": {
+          "protection": {
+            "label": "La protection des systèmes d'information"
+          },
+          "crise": {
+            "label": "La gestion de crise cyber"
+          }
+        }
+      }
+    },
+    "capabilities": {
+      "kicker": "Moyens",
+      "title": "Capacités & Industrie",
+      "lead": "Construire et maintenir les capacités de défense de la République.",
+      "cta": "Tout sur les capacités et l'industrie",
+      "items": {
+        "equipements": {
+          "title": "Équipements",
+          "desc": "Les équipements et l'armement des forces armées."
+        },
+        "programmes": {
+          "title": "Programmes",
+          "desc": "La conduite des programmes d'équipement et d'acquisition."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "desc": "La recherche et les technologies de défense."
+        },
+        "industrie": {
+          "title": "Industrie de défense",
+          "desc": "La filière industrielle et la souveraineté technologique."
+        }
+      }
+    },
+    "serve": {
+      "kicker": "Ressources humaines",
+      "title": "Servir la République",
+      "lead": "La défense nationale repose sur les femmes et les hommes qui choisissent de servir la République.",
+      "text": "Militaires, civils, réservistes : de nombreuses voies permettent de servir la défense nationale. Le recrutement et la vie militaire détaillée sont présentés sur le portail des Armées.",
+      "cta": "Rejoindre les Armées",
+      "items": {
+        "militaires": {
+          "title": "Carrières militaires",
+          "desc": "Choisir une carrière au sein des Armées."
+        },
+        "civils": {
+          "title": "Carrières civiles",
+          "desc": "Travailler au ministère de la Défense et des Armées."
+        },
+        "reserve": {
+          "title": "La réserve",
+          "desc": "S'engager aux côtés des forces armées."
+        },
+        "formation": {
+          "title": "Formation",
+          "desc": "Les écoles et les parcours de formation de la défense."
+        }
+      }
+    },
+    "statements": {
+      "kicker": "Parole officielle",
+      "title": "Paroles & décisions",
+      "lead": "Ce que le ministère dit, décide et publie officiellement.",
+      "items": {
+        "discours": {
+          "title": "Discours",
+          "desc": "Les interventions du ministre de la Défense."
+        },
+        "communiques": {
+          "title": "Communiqués",
+          "desc": "Les déclarations officielles du ministère."
+        },
+        "decisions": {
+          "title": "Décisions",
+          "desc": "Les décisions et les nominations."
+        },
+        "publications": {
+          "title": "Publications et rapports",
+          "desc": "Les documents publics du ministère."
+        },
+        "donnees": {
+          "title": "Données publiques",
+          "desc": "Les données ouvertes de la défense."
+        }
+      }
+    },
+    "ministry": {
+      "kicker": "Institution",
+      "title": "Le Ministère",
+      "lead": "Comprendre l'organisation, le budget et les ressources officielles du ministère de la Défense et des Armées.",
+      "links": {
+        "ministre": {
+          "title": "Le ministre"
+        },
+        "organisation": {
+          "title": "Organisation"
+        },
+        "budget": {
+          "title": "Budget de la défense"
+        },
+        "transparence": {
+          "title": "Transparence"
+        },
+        "marches": {
+          "title": "Marchés publics"
+        },
+        "contact": {
+          "title": "Contact"
+        }
+      }
+    }
+  },
+  "brand": {
+    "republicName": "République d'Astoria"
+  },
+  "header": {
+    "homeTitle": "Retour à l'accueil — Ministère de la Défense et des Armées",
+    "myGouv": "Mon compte",
+    "serviceTitle": "Ministère de la Défense et des Armées",
+    "serviceTagline": "La préparation et la conduite de la défense de la République et de ses intérêts.",
+    "accountLabel": "Mon compte",
+    "logoutLink": "Se déconnecter",
+    "account": {
+      "profile": "Mon profil",
+      "settings": "Paramètres"
+    }
+  },
+  "common": {
+    "skipToContent": "Aller au contenu",
+    "skipToFooter": "Aller au pied de page",
+    "backToTop": {
+      "ariaLabel": "Retour en haut de page"
+    },
+    "cookiePopup": {
+      "ariaLabel": "Information sur les cookies",
+      "title": "Gestion des cookies",
+      "message": "Nous utilisons des cookies pour mesurer l'audience du portail et améliorer votre expérience.",
+      "accept": "Accepter",
+      "decline": "Refuser",
+      "manage": "Gérer mes préférences"
+    }
+  },
+  "footer": {
+    "contentDescription": "Le portail officiel du Ministère de la Défense et des Armées de la République d'Astoria.",
+    "license": "Sauf mention contraire, tous les contenus de ce site sont sous <link>licence APSL</link>.",
+    "bottom": {
+      "contact": "Contact",
+      "planDuPortail": "Plan du portail",
+      "documentsOpposables": "Documents opposables",
+      "privacy": "Données personnelles",
+      "cookies": "Gestion des cookies",
+      "publications": "Publications officielles"
+    }
+  },
+  "stayInTouch": {
+    "newsletter": {
+      "title": "Lettre d'information",
+      "desc": "Recevez les actualités du Ministère de la Défense et des Armées.",
+      "label": "Adresse électronique",
+      "placeholder": "Votre adresse électronique",
+      "submit": "S'abonner",
+      "success": "Votre inscription a bien été prise en compte.",
+      "invalidEmail": "Veuillez saisir une adresse électronique valide.",
+      "hint": "Vous pouvez vous désabonner à tout moment."
+    },
+    "follow": {
+      "title": "Nous suivre",
+      "items": {
+        "x": "X (anciennement Twitter)",
+        "facebook": "Facebook",
+        "linkedin": "LinkedIn",
+        "instagram": "Instagram",
+        "threads": "Threads"
+      }
+    }
+  },
+  "nav": {
+    "primary": {
+      "defenseNationale": "Défense nationale",
+      "forcesArmees": "Forces armées",
+      "operations": "Opérations",
+      "renseignementCyberdefense": "Renseignement & Cyberdéfense",
+      "personnelService": "Personnel & Service",
+      "capacitesIndustrie": "Capacités & Industrie",
+      "leMinistere": "Le Ministère"
+    },
+    "panel": {
+      "defenseNationale": {
+        "title": "Défense nationale",
+        "text": "La politique de défense et la stratégie nationale de défense de la République.",
+        "allLink": "Tout sur la défense nationale",
+        "strategieDeDefense": {
+          "title": "Stratégie de défense",
+          "strategieNationale": "Stratégie nationale de défense",
+          "revueStrategique": "Revue stratégique",
+          "doctrineDemploiDesForces": "Doctrine d'emploi des forces",
+          "documentsDeReference": "Documents de référence"
+        },
+        "politiqueDeDefense": {
+          "title": "Politique de défense",
+          "priorites": "Priorités de la politique de défense",
+          "programmationMilitaire": "Programmation militaire",
+          "dissuasion": "Dissuasion",
+          "alliancesEtTraites": "Alliances et traités"
+        },
+        "planificationEtPreparation": {
+          "title": "Planification et préparation",
+          "planificationDeDefense": "Planification de défense",
+          "preparationDeLaDefense": "Préparation de la défense",
+          "mobilisationNationale": "Mobilisation nationale",
+          "plansDeDefense": "Plans de défense"
+        },
+        "souveraineteEtResilience": {
+          "title": "Souveraineté et résilience",
+          "souveraineteNationale": "Souveraineté nationale",
+          "resilienceNationale": "Résilience nationale",
+          "securiteNationale": "Sécurité nationale",
+          "protectionDesInteretsVitaux": "Protection des intérêts vitaux"
+        }
+      },
+      "forcesArmees": {
+        "title": "Forces armées",
+        "text": "Les composantes militaires et leur organisation au niveau institutionnel.",
+        "allLink": "Tout sur les forces armées",
+        "armeeDeTerre": {
+          "title": "Armée de Terre",
+          "presentation": "Présentation",
+          "organisation": "Organisation",
+          "missions": "Missions",
+          "carrieres": "Carrières"
+        },
+        "marine": {
+          "title": "Marine",
+          "presentation": "Présentation",
+          "organisation": "Organisation",
+          "missions": "Missions",
+          "carrieres": "Carrières"
+        },
+        "armeeDeLAirEtDeLEspace": {
+          "title": "Armée de l'Air et de l'Espace",
+          "presentation": "Présentation",
+          "organisation": "Organisation",
+          "missions": "Missions",
+          "carrieres": "Carrières"
+        },
+        "forcesInterarmeesEtServices": {
+          "title": "Forces interarmées et services",
+          "etatMajorDesArmees": "État-major des armées",
+          "commandementInterarmees": "Commandement interarmées",
+          "forcesSpeciales": "Forces spéciales",
+          "servicesDeSoutien": "Services de soutien"
+        }
+      },
+      "operations": {
+        "title": "Opérations",
+        "text": "L'engagement des forces armées sur le territoire national et à l'étranger.",
+        "allLink": "Tout sur les opérations",
+        "operationsNationales": {
+          "title": "Opérations nationales",
+          "protectionDuTerritoire": "Protection du territoire",
+          "missionsDeSecurite": "Missions de sécurité",
+          "soutienAuxPopulations": "Soutien aux populations",
+          "secoursEtUrgence": "Secours et urgence"
+        },
+        "operationsExterieures": {
+          "title": "Opérations extérieures",
+          "engagementsExterieurs": "Engagements extérieurs",
+          "operationsDePaix": "Opérations de paix",
+          "cooperationOperationnelle": "Coopération opérationnelle",
+          "bilanDesOperations": "Bilan des opérations"
+        },
+        "preparationOperationnelle": {
+          "title": "Préparation opérationnelle",
+          "entrainement": "Entraînement",
+          "exercices": "Exercices",
+          "disponibiliteOperationnelle": "Disponibilité opérationnelle",
+          "doctrineOperationnelle": "Doctrine opérationnelle"
+        },
+        "retourDExperienceEtActualites": {
+          "title": "Retour d'expérience et actualités",
+          "retoursDExperience": "Retours d'expérience",
+          "enseignementsOperationnels": "Enseignements opérationnels",
+          "actualitesOperationnelles": "Actualités opérationnelles",
+          "situationOperationnelle": "Situation opérationnelle"
+        }
+      },
+      "renseignementCyberdefense": {
+        "title": "Renseignement & Cyberdéfense",
+        "text": "Le renseignement militaire et la protection de la Nation dans le cyberespace.",
+        "allLink": "Tout sur le renseignement et la cyberdéfense",
+        "renseignementMilitaire": {
+          "title": "Renseignement militaire",
+          "missions": "Missions",
+          "organisation": "Organisation",
+          "cadreJuridique": "Cadre juridique",
+          "cooperationInterministerielle": "Coopération interministérielle"
+        },
+        "cyberdefense": {
+          "title": "Cyberdéfense",
+          "protectionDesSystemes": "Protection des systèmes",
+          "defenseDesReseaux": "Défense des réseaux",
+          "lutteInformatiqueDefensive": "Lutte informatique défensive",
+          "gestionDeCriseCyber": "Gestion de crise cyber"
+        },
+        "securiteDesSystemesEtDeLInformation": {
+          "title": "Sécurité des systèmes et de l'information",
+          "securiteDeLInformation": "Sécurité de l'information",
+          "protectionDesDonnees": "Protection des données",
+          "homologationEtCertification": "Homologation et certification",
+          "cryptologie": "Cryptologie"
+        },
+        "menacesInformationnelles": {
+          "title": "Menaces informationnelles",
+          "lutteContreLaDesinformation": "Lutte contre la désinformation",
+          "ingerencesEtrangeres": "Ingérences étrangères",
+          "manipulationDeLInformation": "Manipulation de l'information",
+          "sensibilisationEtPrevention": "Sensibilisation et prévention"
+        }
+      },
+      "personnelService": {
+        "title": "Personnel & Service",
+        "text": "Les femmes et les hommes qui servent la défense : recrutement, carrières, formation, réserve.",
+        "allLink": "Tout sur le personnel et le service",
+        "recrutement": {
+          "title": "Recrutement",
+          "recrutementMilitaire": "Recrutement militaire",
+          "recrutementCivil": "Recrutement civil",
+          "concours": "Concours",
+          "commentPostuler": "Comment postuler"
+        },
+        "carrieresEtParcours": {
+          "title": "Carrières et parcours",
+          "statutDesMilitaires": "Statut des militaires",
+          "parcoursProfessionnels": "Parcours professionnels",
+          "mobiliteEtAffectations": "Mobilité et affectations",
+          "soldesEtPensions": "Soldes et pensions"
+        },
+        "formation": {
+          "title": "Formation",
+          "formationInitiale": "Formation initiale",
+          "formationContinue": "Formation continue",
+          "ecolesEtCentres": "Écoles et centres",
+          "certificationEtQualifications": "Certification et qualifications"
+        },
+        "reserveEtAnciensMilitaires": {
+          "title": "Réserve et anciens militaires",
+          "reserveOperationnelle": "Réserve opérationnelle",
+          "reserveCitoyenne": "Réserve citoyenne",
+          "anciensMilitaires": "Anciens militaires",
+          "accompagnementSocial": "Accompagnement social"
+        }
+      },
+      "capacitesIndustrie": {
+        "title": "Capacités & Industrie",
+        "text": "Les équipements, les programmes et la politique industrielle de défense.",
+        "allLink": "Tout sur les capacités et l'industrie",
+        "equipementsEtArmement": {
+          "title": "Équipements et armement",
+          "equipementsDesForces": "Équipements des forces",
+          "armement": "Armement",
+          "maintienEnCondition": "Maintien en condition",
+          "modernisation": "Modernisation"
+        },
+        "programmesEtAcquisitions": {
+          "title": "Programmes et acquisitions",
+          "programmesDarmement": "Programmes d'armement",
+          "equipementsFuturs": "Équipements futurs",
+          "commandesEtLivraisons": "Commandes et livraisons",
+          "cooperationDarmement": "Coopération d'armement"
+        },
+        "industrieDeDefense": {
+          "title": "Industrie de défense",
+          "filiereIndustrielle": "Filière industrielle",
+          "entreprisesEtPme": "Entreprises et PME",
+          "exportationsDeDefense": "Exportations de défense",
+          "souveraineteIndustrielle": "Souveraineté industrielle"
+        },
+        "rechercheEtInnovation": {
+          "title": "Recherche et innovation",
+          "rechercheDeDefense": "Recherche de défense",
+          "innovation": "Innovation",
+          "technologiesEmergentes": "Technologies émergentes",
+          "agencesEtOperateurs": "Agences et opérateurs"
+        }
+      },
+      "leMinistere": {
+        "title": "Le Ministère",
+        "text": "L'institution, son administration, son budget et sa transparence.",
+        "allLink": "Tout sur le ministère",
+        "institution": {
+          "title": "Institution",
+          "leMinistre": "Le ministre",
+          "missions": "Missions",
+          "organisation": "Organisation",
+          "organigramme": "Organigramme"
+        },
+        "administration": {
+          "title": "Administration",
+          "servicesDuMinistere": "Services du ministère",
+          "administrationCentrale": "Administration centrale",
+          "servicesDeconcentres": "Services déconcentrés",
+          "etablissementsPublics": "Établissements publics"
+        },
+        "budgetEtTransparence": {
+          "title": "Budget et transparence",
+          "budgetDeLaDefense": "Budget de la défense",
+          "rapportsDActivite": "Rapports d'activité",
+          "donneesPubliques": "Données publiques",
+          "marchesPublics": "Marchés publics"
+        },
+        "actualitesEtContact": {
+          "title": "Actualités et contact",
+          "actualites": "Actualités",
+          "communiques": "Communiqués",
+          "publications": "Publications officielles",
+          "contact": "Contact"
+        }
+      }
+    }
+  },
+  "pages": {
+    "contact": {
+      "meta": {
+        "title": "Contact",
+        "description": "Contactez le Ministère de la Défense et des Armées de la République d'Astoria."
+      },
+      "hero": {
+        "kicker": "Contact",
+        "title": "Nous contacter",
+        "lead": "Une question, une demande d'information ou une sollicitation presse ? Adressez votre message au service compétent."
+      },
+      "formSection": {
+        "kicker": "Formulaire",
+        "title": "Écrire au ministère",
+        "lead": "Sélectionnez le destinataire, puis renseignez votre message."
+      },
+      "channels": {
+        "kicker": "Coordonnées",
+        "title": "Nous joindre",
+        "lead": "Les coordonnées des services du ministère.",
+        "facts": {
+          "email": {
+            "label": "Courriel",
+            "value": "contact@defense.gouv.aor"
+          },
+          "phone": {
+            "label": "Téléphone",
+            "value": "+000 00 00 00 00"
+          },
+          "address": {
+            "label": "Adresse",
+            "value": "Ministère de la Défense et des Armées, République d'Astoria"
+          },
+          "hours": {
+            "label": "Horaires",
+            "value": "Du lundi au vendredi, de 9h à 17h"
+          }
+        }
+      },
+      "recipients": {
+        "presidence": "Présidence de la République",
+        "communications": "Direction de la communication",
+        "presse": "Service de presse",
+        "monnaie": "Direction générale de l'armement",
+        "etablissements": "Établissements et services"
+      },
+      "form": {
+        "recipientLabel": "Destinataire",
+        "selectRecipient": "Sélectionner un destinataire",
+        "presidency": "Présidence de la République",
+        "nameLabel": "Nom et prénom",
+        "namePlaceholder": "Votre nom et prénom",
+        "emailFieldLabel": "Adresse électronique",
+        "emailPlaceholder": "votre.adresse@exemple.aor",
+        "subjectLabel": "Objet",
+        "subjectPlaceholder": "Objet de votre message",
+        "messageLabel": "Message",
+        "messagePlaceholder": "Votre message",
+        "requiredField": "Ce champ est obligatoire.",
+        "invalidEmail": "Veuillez saisir une adresse électronique valide.",
+        "sendButton": "Envoyer"
+      }
+    },
+    "sitemap": {
+      "meta": {
+        "title": "Plan du portail",
+        "description": "Plan du portail du Ministère de la Défense et des Armées."
+      },
+      "hero": {
+        "kicker": "Navigation",
+        "title": "Plan du portail",
+        "lead": "Retrouvez l'ensemble des rubriques et des services du portail."
+      },
+      "sections": {
+        "portail": {
+          "kicker": "Rubriques",
+          "title": "Les rubriques du portail",
+          "lead": "L'architecture institutionnelle du ministère."
+        },
+        "transversal": {
+          "kicker": "Informations",
+          "title": "Pages transversales",
+          "lead": "Les pages d'information et les documents juridiques.",
+          "links": {
+            "contact": "Contact",
+            "accessibility": "Accessibilité",
+            "privacy": "Données personnelles",
+            "terms": "Conditions d'utilisation",
+            "cookies": "Gestion des cookies",
+            "publications": "Publications officielles",
+            "documentsOpposables": "Documents opposables"
+          }
+        }
+      }
+    },
+    "legal": {
+      "meta": {
+        "title": "Informations légales",
+        "description": "Informations légales du portail du Ministère de la Défense et des Armées."
+      },
+      "landing": {
+        "hero": {
+          "kicker": "Informations légales",
+          "title": "Informations légales",
+          "lead": "Retrouvez les documents juridiques et les engagements du portail.",
+          "notice": "Ces informations sont susceptibles d'évoluer."
+        }
+      },
+      "related": {
+        "title": "Documents juridiques",
+        "kicker": "À consulter",
+        "accessibility": {
+          "label": "Déclaration d'accessibilité",
+          "desc": "L'engagement d'accessibilité numérique du portail."
+        },
+        "privacy": {
+          "label": "Politique de protection des données",
+          "desc": "Le traitement des données à caractère personnel."
+        },
+        "terms": {
+          "label": "Conditions générales d'utilisation",
+          "desc": "Les règles d'usage du portail."
+        },
+        "cookies": {
+          "label": "Politique de gestion des cookies",
+          "desc": "Les cookies déposés et leur finalité."
+        },
+        "sitemap": {
+          "label": "Plan du portail",
+          "desc": "L'ensemble des rubriques du portail."
+        }
+      },
+      "accessibility": {
+        "meta": {
+          "title": "Déclaration d'accessibilité",
+          "description": "Déclaration d'accessibilité du portail du Ministère de la Défense et des Armées."
+        },
+        "hero": {
+          "kicker": "Accessibilité",
+          "title": "Déclaration d'accessibilité",
+          "lead": "Le ministère s'engage à rendre son portail accessible à tous les usagers.",
+          "notice": "Cette déclaration a été établie conformément aux référentiels d'accessibilité en vigueur."
+        },
+        "sections": {
+          "declaration": {
+            "kicker": "Engagement",
+            "title": "Déclaration d'engagement",
+            "lead": "Le ministère s'engage à améliorer en continu l'accessibilité de son portail.",
+            "paragraphs": {
+              "p1": "L'accessibilité numérique est une condition d'égal accès au service public. Le ministère veille à ce que son portail puisse être utilisé par tous, y compris les personnes en situation de handicap.",
+              "p2": "Cet engagement se traduit par des audits réguliers, la correction des non-conformités et la formation des équipes."
+            }
+          },
+          "conformite": {
+            "kicker": "Conformité",
+            "title": "État de conformité",
+            "lead": "Le portail fait l'objet d'une évaluation de sa conformité aux référentiels en vigueur.",
+            "bullets": {
+              "b1": "Les pages principales respectent les critères de base d'accessibilité.",
+              "b2": "Des corrections sont apportées au fil de l'eau sur les contenus existants.",
+              "b3": "Un audit complet est programmé pour confirmer le niveau de conformité."
+            }
+          },
+          "nonAccessibles": {
+            "kicker": "Points d'attention",
+            "title": "Contenus non accessibles",
+            "lead": "Certains contenus peuvent présenter des difficultés d'accès temporaires.",
+            "bullets": {
+              "b1": "Des documents publiés dans des formats anciens peuvent ne pas être entièrement accessibles.",
+              "b2": "Certaines applications embarquées peuvent présenter des lacunes.",
+              "b3": "Les contenus en langues étrangères peuvent ne pas disposer d'alternatives."
+            }
+          },
+          "etablissement": {
+            "kicker": "Méthode",
+            "title": "Établissement de cette déclaration",
+            "lead": "Cette déclaration décrit la démarche d'évaluation mise en œuvre.",
+            "facts": {
+              "tests": {
+                "label": "Tests réalisés",
+                "value": "Audit interne et tests utilisateurs"
+              },
+              "referentiel": {
+                "label": "Référentiel",
+                "value": "Référentiel d'accessibilité en vigueur"
+              },
+              "outils": {
+                "label": "Outils",
+                "value": "Outils d'évaluation automatique et manuelle"
+              }
+            }
+          },
+          "retour": {
+            "kicker": "Contact",
+            "title": "Retour d'information et contact",
+            "lead": "Si vous rencontrez un problème d'accessibilité, vous pouvez nous le signaler.",
+            "paragraphs": {
+              "p1": "Vous pouvez adresser vos remarques au service compétent via la page de contact du portail."
+            }
+          },
+          "voiesRecours": {
+            "kicker": "Recours",
+            "title": "Voies de recours",
+            "lead": "En cas de difficulté persistante, des voies de recours sont ouvertes.",
+            "bullets": {
+              "b1": "Vous pouvez saisir le médiateur compétent.",
+              "b2": "Vous pouvez adresser une réclamation à l'administration.",
+              "b3": "Vous pouvez saisir la juridiction compétente."
+            }
+          }
+        }
+      },
+      "privacy": {
+        "meta": {
+          "title": "Politique de protection des données",
+          "description": "Politique de protection des données à caractère personnel du portail."
+        },
+        "hero": {
+          "kicker": "Données personnelles",
+          "title": "Politique de protection des données",
+          "lead": "Comment le ministère traite vos données à caractère personnel.",
+          "notice": "Cette politique peut être mise à jour."
+        },
+        "sections": {
+          "responsable": {
+            "kicker": "Responsable",
+            "title": "Responsable de traitement",
+            "lead": "Le responsable du traitement des données est le ministère.",
+            "paragraphs": {
+              "p1": "Le ministère détermine les finalités et les moyens du traitement des données collectées sur le portail."
+            },
+            "facts": {
+              "responsable": {
+                "label": "Responsable",
+                "value": "Ministère de la Défense et des Armées"
+              },
+              "adresse": {
+                "label": "Adresse",
+                "value": "Ministère de la Défense et des Armées, République d'Astoria"
+              },
+              "dpo": {
+                "label": "Délégué à la protection des données",
+                "value": "dpo@defense.gouv.aor"
+              }
+            }
+          },
+          "donnees": {
+            "kicker": "Données",
+            "title": "Données collectées",
+            "lead": "Seules les données nécessaires aux finalités poursuivies sont collectées.",
+            "bullets": {
+              "b1": "Les données d'identification que vous saisissez dans les formulaires.",
+              "b2": "Les données de contact nécessaires au traitement de votre demande.",
+              "b3": "Les données techniques de navigation, le cas échéant.",
+              "b4": "Les données de mesure d'audience, si vous y avez consenti."
+            }
+          },
+          "finalites": {
+            "kicker": "Finalités",
+            "title": "Finalités et bases légales",
+            "lead": "Chaque traitement poursuit une finalité déterminée et repose sur une base légale.",
+            "paragraphs": {
+              "p1": "Les traitements mis en œuvre répondent à une mission d'intérêt public ou à une obligation légale du ministère.",
+              "p2": "Les données ne sont jamais utilisées à des fins incompatibles avec celles pour lesquelles elles ont été collectées."
+            }
+          },
+          "conservation": {
+            "kicker": "Conservation",
+            "title": "Durée de conservation",
+            "lead": "Les données sont conservées pour une durée limitée et proportionnée.",
+            "facts": {
+              "duree": {
+                "label": "Durée",
+                "value": "Durée nécessaire à la finalité poursuivie"
+              },
+              "critere": {
+                "label": "Critère",
+                "value": "Obligations légales et utilité administrative"
+              }
+            }
+          },
+          "droits": {
+            "kicker": "Droits",
+            "title": "Vos droits",
+            "lead": "Vous disposez de droits sur vos données à caractère personnel.",
+            "bullets": {
+              "b1": "Droit d'accès à vos données.",
+              "b2": "Droit de rectification des données inexactes.",
+              "b3": "Droit à l'effacement dans les cas prévus par la réglementation.",
+              "b4": "Droit à la limitation du traitement.",
+              "b5": "Droit d'opposition pour motif légitime."
+            }
+          },
+          "cookies": {
+            "kicker": "Cookies",
+            "title": "Cookies et mesure d'audience",
+            "lead": "Le portail utilise des cookies pour assurer son fonctionnement et mesurer son audience.",
+            "paragraphs": {
+              "p1": "Vous pouvez à tout moment modifier vos choix en matière de cookies."
+            },
+            "notice": "Les cookies non essentiels ne sont déposés qu'avec votre consentement.",
+            "cta": "Gérer mes préférences"
+          }
+        }
+      },
+      "terms": {
+        "meta": {
+          "title": "Conditions générales d'utilisation",
+          "description": "Conditions générales d'utilisation du portail."
+        },
+        "hero": {
+          "kicker": "Utilisation",
+          "title": "Conditions générales d'utilisation",
+          "lead": "Les règles applicables à l'usage du portail.",
+          "notice": "L'utilisation du portail vaut acceptation des présentes conditions."
+        },
+        "sections": {
+          "objet": {
+            "kicker": "Objet",
+            "title": "Objet",
+            "lead": "Les présentes conditions définissent les modalités d'utilisation du portail.",
+            "paragraphs": {
+              "p1": "Le portail a pour objet d'informer le public sur l'action du ministère et de faciliter l'accès aux services et aux démarches en ligne.",
+              "p2": "L'éditeur se réserve le droit de modifier les présentes conditions à tout moment."
+            }
+          },
+          "utilisation": {
+            "kicker": "Utilisation",
+            "title": "Utilisation du portail",
+            "lead": "L'usager s'engage à utiliser le portail dans le respect de la réglementation.",
+            "bullets": {
+              "b1": "Ne pas porter atteinte au fonctionnement ou à la sécurité du portail.",
+              "b2": "Ne pas tenter d'accéder à des données non autorisées.",
+              "b3": "Ne pas usurper l'identité d'un tiers.",
+              "b4": "Ne pas publier de contenus illicites ou trompeurs."
+            }
+          },
+          "contenus": {
+            "kicker": "Contenus",
+            "title": "Contenus et données",
+            "lead": "Les contenus publiés sur le portail sont protégés par le droit applicable.",
+            "paragraphs": {
+              "p1": "Sauf mention contraire, les contenus sont mis à disposition sous une licence ouverte.",
+              "p2": "Les données à caractère personnel sont traitées conformément à la politique de protection des données."
+            }
+          },
+          "responsabilite": {
+            "kicker": "Responsabilité",
+            "title": "Responsabilité",
+            "lead": "Le ministère ne saurait être tenu responsable de certains usages du portail.",
+            "paragraphs": {
+              "p1": "Le ministère s'efforce d'assurer l'exactitude et la disponibilité des informations publiées, sans garantie d'absence d'erreur ou d'interruption.",
+              "p2": "Les liens vers des sites tiers n'engagent pas la responsabilité du ministère."
+            }
+          },
+          "liens": {
+            "kicker": "Liens",
+            "title": "Liens",
+            "lead": "La mise en place de liens vers le portail est encadrée.",
+            "paragraphs": {
+              "p1": "Tout lien vers le portail doit respecter les conditions d'usage et ne pas induire le public en erreur."
+            }
+          },
+          "modification": {
+            "kicker": "Modification",
+            "title": "Modification des conditions",
+            "lead": "Les présentes conditions peuvent être modifiées pour tenir compte des évolutions du portail.",
+            "paragraphs": {
+              "p1": "La version en vigueur est celle publiée sur le portail à la date de votre consultation."
+            },
+            "notice": "Il vous appartient de consulter régulièrement les conditions d'utilisation."
+          }
+        }
+      },
+      "cookies": {
+        "meta": {
+          "title": "Politique de gestion des cookies",
+          "description": "Politique de gestion des cookies du portail."
+        },
+        "hero": {
+          "kicker": "Cookies",
+          "title": "Politique de gestion des cookies",
+          "lead": "Les cookies déposés sur votre terminal et leur finalité.",
+          "notice": "Vous pouvez modifier vos choix à tout moment."
+        },
+        "sections": {
+          "definition": {
+            "kicker": "Définition",
+            "title": "Définition",
+            "lead": "Un cookie est un fichier déposé sur votre terminal lors de la consultation d'un site.",
+            "paragraphs": {
+              "p1": "Les cookies permettent notamment d'assurer le fonctionnement du portail, de mémoriser vos préférences et de mesurer l'audience.",
+              "p2": "Vous pouvez à tout moment paramétrer les cookies depuis votre navigateur ou depuis le bandeau de gestion des cookies."
+            }
+          },
+          "cookiesDeposes": {
+            "kicker": "Cookies",
+            "title": "Cookies déposés",
+            "lead": "Le tableau ci-dessous présente les familles de cookies utilisés par le portail.",
+            "table": {
+              "caption": "Familles de cookies déposés",
+              "headers": {
+                "0": "Catégorie",
+                "1": "Finalité",
+                "2": "Durée"
+              },
+              "rows": {
+                "0": {
+                  "0": "Cookies essentiels",
+                  "1": "Fonctionnement du portail et sécurité",
+                  "2": "Session"
+                },
+                "1": {
+                  "0": "Cookies de préférences",
+                  "1": "Mémorisation de vos choix d'affichage",
+                  "2": "12 mois"
+                },
+                "2": {
+                  "0": "Cookies de mesure d'audience",
+                  "1": "Mesure de la fréquentation du portail",
+                  "2": "13 mois"
+                },
+                "3": {
+                  "0": "Cookies tiers",
+                  "1": "Services externes intégrés au portail",
+                  "2": "Selon le service"
+                }
+              },
+              "note": "Les cookies non essentiels ne sont déposés qu'avec votre consentement."
+            }
+          },
+          "gestion": {
+            "kicker": "Gestion",
+            "title": "Gestion des cookies",
+            "lead": "Vous pouvez accepter, refuser ou supprimer les cookies à tout moment.",
+            "bullets": {
+              "b1": "Paramétrer vos choix depuis le bandeau de gestion des cookies.",
+              "b2": "Configurer votre navigateur pour refuser les cookies.",
+              "b3": "Supprimer les cookies déjà déposés sur votre terminal."
+            },
+            "notice": "Le refus des cookies non essentiels ne limite pas l'accès aux informations du portail."
+          }
+        }
+      }
+    }
+  }
+}

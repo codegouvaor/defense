@@ -4,7 +4,7 @@ import (
 	"log/slog"
 
 	"github.com/gin-gonic/gin"
-	"github.com/codegouvaor/justice/server/src/utils"
+	"github.com/codegouvaor/defense/server/src/utils"
 )
 
 func Recovery(logger *slog.Logger) gin.HandlerFunc {

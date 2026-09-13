@@ -5,9 +5,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/codegouvaor/justice/server/src/interfaces"
-	"github.com/codegouvaor/justice/server/src/models"
-	"github.com/codegouvaor/justice/server/src/utils"
+	"github.com/codegouvaor/defense/server/src/interfaces"
+	"github.com/codegouvaor/defense/server/src/models"
+	"github.com/codegouvaor/defense/server/src/utils"
 )
 
 type UserService struct {

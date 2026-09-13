@@ -1,4 +1,4 @@
-module github.com/codegouvaor/justice
+module github.com/codegouvaor/defense
 
 go 1.25.5
 

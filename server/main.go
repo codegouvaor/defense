@@ -12,11 +12,11 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	redisclient "github.com/codegouvaor/justice/server/internal/redis"
-	"github.com/codegouvaor/justice/server/src/config"
-	"github.com/codegouvaor/justice/server/src/middleware"
-	"github.com/codegouvaor/justice/server/src/routes"
-	"github.com/codegouvaor/justice/server/src/services"
+	redisclient "github.com/codegouvaor/defense/server/internal/redis"
+	"github.com/codegouvaor/defense/server/src/config"
+	"github.com/codegouvaor/defense/server/src/middleware"
+	"github.com/codegouvaor/defense/server/src/routes"
+	"github.com/codegouvaor/defense/server/src/services"
 )
 
 type runtimeMode string

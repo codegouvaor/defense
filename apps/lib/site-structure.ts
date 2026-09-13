@@ -1,6 +1,6 @@
 /**
- * URL structure of the public portal of the Ministry of Justice of Astoria
- * (`justice.gouv.aor`).
+ * URL structure of the public portal of the Ministry of Defense and of the
+ * Armed Forces of Astoria (`defense.gouv.aor`).
  *
  * Hrefs are locale-agnostic pathnames: the next-intl Link (registered as the
  * ADS link renderer) prefixes the active locale automatically. Labels are
@@ -20,19 +20,24 @@
  * theme, section or link never requires rewriting a component — it only
  * requires editing this file (and the matching message keys).
  *
- * The information architecture reflects the institutional perimeter of a
- * ministry of justice. Six entries cover the public-policy fields of the
- * justice system (Justice, Droit, Juridictions, Procédures, Professionnels,
- * Données & ressources); a seventh, distinct entry, “Le Ministère”, presents
- * the institution itself.
+ * The information architecture reflects the institutional perimeter of the
+ * Ministry of Defense and of the Armed Forces. It is organised from the core
+ * of the defense mission towards the means, then towards the administrative
+ * institution — not the reverse:
  *
- *   Justice              → l'organisation, la politique judiciaire, l'accès à la justice et les droits
- *   Droit                → les textes, les codes, la jurisprudence et la recherche juridique
- *   Juridictions         → l'ordre judiciaire, les tribunaux, les juridictions spécialisées et les audiences
- *   Procédures           → les procédures civiles, pénales, administratives et les démarches
- *   Professionnels       → la magistrature, les auxiliaires de justice, les carrières et la formation
- *   Données & ressources → les décisions, les statistiques, les publications et les données ouvertes
- *   Le Ministère         → l'institution, son administration, sa transparence et ses actualités
+ *   Défense nationale         → comprendre : la politique, la stratégie et la préparation de la défense
+ *   Forces armées             → organiser  : les composantes militaires au niveau institutionnel
+ *   Opérations                → engager    : l'engagement des forces armées
+ *   Renseignement & Cyberdéfense → protéger : le renseignement militaire et la cyberdéfense
+ *   Personnel & Service       → servir     : les femmes et les hommes qui servent la défense
+ *   Capacités & Industrie     → développer : les équipements, les programmes et l'industrie de défense
+ *   Le Ministère              → administrer : l'institution, son administration, sa transparence
+ *
+ * This navigation deliberately keeps a ministry-of-defense perimeter: the
+ * operational detail of the Armed Forces (units, military trades, recruitment,
+ * everyday military life, force activities) belongs to the future
+ * `mil.gouv.aor` portal and is not reproduced here. `defense.gouv.aor` only
+ * provides the institutional entry points towards those forces.
  *
  * The structure is validated both at compile time (the tuple types below
  * enforce exactly 7 themes × 4 sections × 4 links) and at runtime
@@ -45,16 +50,17 @@ export const PORTAL_HOME = "/";
 
 /**
  * The seven entries of the portal — both `nav.primary` and `footer.columns`
- * keys. The six first entries are the functional navigation; the seventh,
- * `leMinistere`, is the distinct institutional entry.
+ * keys. The six first entries are the functional navigation (from the core
+ * mission to the means); the seventh, `leMinistere`, is the distinct
+ * institutional entry, intentionally placed last.
  */
 export type PrimaryNavKey =
-  | "justice"
-  | "droit"
-  | "juridictions"
-  | "procedures"
-  | "professionnels"
-  | "donneesRessources"
+  | "defenseNationale"
+  | "forcesArmees"
+  | "operations"
+  | "renseignementCyberdefense"
+  | "personnelService"
+  | "capacitesIndustrie"
   | "leMinistere";
 
 /** A destination inside a mega-menu panel; its label is a `nav.panel` message key. */
@@ -100,11 +106,11 @@ export type NavigationItems = readonly [
  * One top-level entry of the Government Header navigation.
  *
  * Navigation principle (info.gouv.fr-inspired, adapted to Astoria): the header
- * is organised around the missions of the ministry of justice and the
- * understanding of the justice system — not around a ministry's internal
+ * is organised around the missions of the ministry of defense and the
+ * understanding of the defense system — not around a ministry's internal
  * structure. Each entry opens a mega-menu panel composed of
  *  - a leader band: the entry name, a one-line description and the main
- *    action of the section (“Tout sur la Justice”, …),
+ *    action of the section (“Tout sur la défense nationale”, …),
  *  - four sections, each headed by its title and followed by its four
  *    destinations.
  *
@@ -134,12 +140,12 @@ export type FooterColumn = {
 };
 
 export const sectionPaths = {
-  justice: "/justice",
-  droit: "/droit",
-  juridictions: "/juridictions",
-  procedures: "/procedures",
-  professionnels: "/professionnels",
-  donneesRessources: "/donnees-et-ressources",
+  defenseNationale: "/defense-nationale",
+  forcesArmees: "/forces-armees",
+  operations: "/operations",
+  renseignementCyberdefense: "/renseignement-et-cyberdefense",
+  personnelService: "/personnel-et-service",
+  capacitesIndustrie: "/capacites-et-industrie",
   leMinistere: "/le-ministere",
 } as const;
 
@@ -245,20 +251,23 @@ export function countNavigationLinks(
 }
 
 /**
- * Main navigation of the Government Header of the Ministry of Justice of
- * Astoria — the permanent information architecture of the portal, organised
- * in seven entries:
+ * Main navigation of the Government Header of the Ministry of Defense and of
+ * the Armed Forces of Astoria — the permanent information architecture of the
+ * portal, organised in seven entries:
  *
- *   Justice              → comprendre : l'organisation, la politique judiciaire, l'accès à la justice, les droits
- *   Droit                → consulter : les textes, les codes, la jurisprudence, la recherche juridique
- *   Juridictions         → trouver   : l'ordre judiciaire, les tribunaux, les juridictions spécialisées, les audiences
- *   Procédures           → agir      : les procédures civiles, pénales, administratives, les démarches
- *   Professionnels       → exercer   : la magistrature, les auxiliaires de justice, les carrières, la formation
- *   Données & ressources → connaître : les décisions, les statistiques, les publications, les données ouvertes
- *   Le Ministère         → incarner  : l'institution, l'administration, la transparence, les actualités
+ *   Défense nationale             → comprendre : la stratégie, la politique, la planification et la résilience
+ *   Forces armées                 → organiser  : l'Armée de Terre, la Marine, l'Armée de l'Air et de l'Espace, les forces interarmées
+ *   Opérations                    → engager    : les opérations nationales et extérieures, la préparation opérationnelle
+ *   Renseignement & Cyberdéfense   → protéger  : le renseignement, la cyberdéfense, la sécurité des systèmes
+ *   Personnel & Service           → servir     : le recrutement, les carrières, la formation, la réserve
+ *   Capacités & Industrie         → développer : les équipements, les programmes, l'industrie, la recherche
+ *   Le Ministère                  → administrer : l'institution, l'administration, le budget, la transparence
  *
- * The six first entries present the *public-policy* perimeter of the ministry;
- * the seventh, distinct, presents the institution itself.
+ * The six first entries present the *public-policy* perimeter of the ministry
+ * — from the heart of the defense mission towards the means; the seventh,
+ * distinct, presents the institution itself and is deliberately placed last.
+ * The operational detail of the Armed Forces belongs to `mil.gouv.aor` and is
+ * not absorbed here.
  *
  * Each entry opens a mega-menu panel with a leader band and four sections —
  * each section headed by its title and followed by its four destinations. The
@@ -270,312 +279,321 @@ export function countNavigationLinks(
 export const primaryNavigation: ReadonlyArray<NavigationSection> = [
   {
     type: "megaMenu",
-    labelKey: "justice",
-    href: sectionPaths.justice,
+    labelKey: "defenseNationale",
+    href: sectionPaths.defenseNationale,
     leader: {
-      titleKey: "justice.title",
-      paragraphKey: "justice.text",
-      link: { labelKey: "justice.allLink", href: sectionPaths.justice },
+      titleKey: "defenseNationale.title",
+      paragraphKey: "defenseNationale.text",
+      link: {
+        labelKey: "defenseNationale.allLink",
+        href: sectionPaths.defenseNationale,
+      },
     },
     primaryItems: [
       {
-        labelKey: "justice.organisation.title",
-        href: `${sectionPaths.justice}/organisation`,
+        labelKey: "defenseNationale.strategieDeDefense.title",
+        href: `${sectionPaths.defenseNationale}/strategie-de-defense`,
         links: [
-          { labelKey: "justice.organisation.systemeJudiciaire", href: `${sectionPaths.justice}/organisation/systeme-judiciaire` },
-          { labelKey: "justice.organisation.organisationDeLaJustice", href: `${sectionPaths.justice}/organisation/organisation-de-la-justice` },
-          { labelKey: "justice.organisation.principesFondamentaux", href: `${sectionPaths.justice}/organisation/principes-fondamentaux` },
-          { labelKey: "justice.organisation.reformeDeLaJustice", href: `${sectionPaths.justice}/organisation/reforme-de-la-justice` },
+          { labelKey: "defenseNationale.strategieDeDefense.strategieNationale", href: `${sectionPaths.defenseNationale}/strategie-de-defense/strategie-nationale` },
+          { labelKey: "defenseNationale.strategieDeDefense.revueStrategique", href: `${sectionPaths.defenseNationale}/strategie-de-defense/revue-strategique` },
+          { labelKey: "defenseNationale.strategieDeDefense.doctrineDemploiDesForces", href: `${sectionPaths.defenseNationale}/strategie-de-defense/doctrine-d-emploi-des-forces` },
+          { labelKey: "defenseNationale.strategieDeDefense.documentsDeReference", href: `${sectionPaths.defenseNationale}/strategie-de-defense/documents-de-reference` },
         ],
       },
       {
-        labelKey: "justice.politiqueJudiciaire.title",
-        href: `${sectionPaths.justice}/politique-judiciaire`,
+        labelKey: "defenseNationale.politiqueDeDefense.title",
+        href: `${sectionPaths.defenseNationale}/politique-de-defense`,
         links: [
-          { labelKey: "justice.politiqueJudiciaire.priorites", href: `${sectionPaths.justice}/politique-judiciaire/priorites` },
-          { labelKey: "justice.politiqueJudiciaire.programmes", href: `${sectionPaths.justice}/politique-judiciaire/programmes` },
-          { labelKey: "justice.politiqueJudiciaire.reformes", href: `${sectionPaths.justice}/politique-judiciaire/reformes` },
-          { labelKey: "justice.politiqueJudiciaire.evaluationDesPolitiques", href: `${sectionPaths.justice}/politique-judiciaire/evaluation-des-politiques` },
+          { labelKey: "defenseNationale.politiqueDeDefense.priorites", href: `${sectionPaths.defenseNationale}/politique-de-defense/priorites` },
+          { labelKey: "defenseNationale.politiqueDeDefense.programmationMilitaire", href: `${sectionPaths.defenseNationale}/politique-de-defense/programmation-militaire` },
+          { labelKey: "defenseNationale.politiqueDeDefense.dissuasion", href: `${sectionPaths.defenseNationale}/politique-de-defense/dissuasion` },
+          { labelKey: "defenseNationale.politiqueDeDefense.alliancesEtTraites", href: `${sectionPaths.defenseNationale}/politique-de-defense/alliances-et-traites` },
         ],
       },
       {
-        labelKey: "justice.accesALaJustice.title",
-        href: `${sectionPaths.justice}/acces-a-la-justice`,
+        labelKey: "defenseNationale.planificationEtPreparation.title",
+        href: `${sectionPaths.defenseNationale}/planification-et-preparation`,
         links: [
-          { labelKey: "justice.accesALaJustice.aideJuridictionnelle", href: `${sectionPaths.justice}/acces-a-la-justice/aide-juridictionnelle` },
-          { labelKey: "justice.accesALaJustice.mediation", href: `${sectionPaths.justice}/acces-a-la-justice/mediation` },
-          { labelKey: "justice.accesALaJustice.conciliation", href: `${sectionPaths.justice}/acces-a-la-justice/conciliation` },
-          { labelKey: "justice.accesALaJustice.accesAuxServicesJudiciaires", href: `${sectionPaths.justice}/acces-a-la-justice/acces-aux-services-judiciaires` },
+          { labelKey: "defenseNationale.planificationEtPreparation.planificationDeDefense", href: `${sectionPaths.defenseNationale}/planification-et-preparation/planification-de-defense` },
+          { labelKey: "defenseNationale.planificationEtPreparation.preparationDeLaDefense", href: `${sectionPaths.defenseNationale}/planification-et-preparation/preparation-de-la-defense` },
+          { labelKey: "defenseNationale.planificationEtPreparation.mobilisationNationale", href: `${sectionPaths.defenseNationale}/planification-et-preparation/mobilisation-nationale` },
+          { labelKey: "defenseNationale.planificationEtPreparation.plansDeDefense", href: `${sectionPaths.defenseNationale}/planification-et-preparation/plans-de-defense` },
         ],
       },
       {
-        labelKey: "justice.droits.title",
-        href: `${sectionPaths.justice}/droits`,
+        labelKey: "defenseNationale.souveraineteEtResilience.title",
+        href: `${sectionPaths.defenseNationale}/souverainete-et-resilience`,
         links: [
-          { labelKey: "justice.droits.droitsFondamentaux", href: `${sectionPaths.justice}/droits/droits-fondamentaux` },
-          { labelKey: "justice.droits.droitsDesVictimes", href: `${sectionPaths.justice}/droits/droits-des-victimes` },
-          { labelKey: "justice.droits.droitsDesPersonnesMisesEnCause", href: `${sectionPaths.justice}/droits/droits-des-personnes-mises-en-cause` },
-          { labelKey: "justice.droits.protectionDesPersonnesVulnerables", href: `${sectionPaths.justice}/droits/protection-des-personnes-vulnerables` },
+          { labelKey: "defenseNationale.souveraineteEtResilience.souveraineteNationale", href: `${sectionPaths.defenseNationale}/souverainete-et-resilience/souverainete-nationale` },
+          { labelKey: "defenseNationale.souveraineteEtResilience.resilienceNationale", href: `${sectionPaths.defenseNationale}/souverainete-et-resilience/resilience-nationale` },
+          { labelKey: "defenseNationale.souveraineteEtResilience.securiteNationale", href: `${sectionPaths.defenseNationale}/souverainete-et-resilience/securite-nationale` },
+          { labelKey: "defenseNationale.souveraineteEtResilience.protectionDesInteretsVitaux", href: `${sectionPaths.defenseNationale}/souverainete-et-resilience/protection-des-interets-vitaux` },
         ],
       },
     ],
   },
   {
     type: "megaMenu",
-    labelKey: "droit",
-    href: sectionPaths.droit,
+    labelKey: "forcesArmees",
+    href: sectionPaths.forcesArmees,
     leader: {
-      titleKey: "droit.title",
-      paragraphKey: "droit.text",
-      link: { labelKey: "droit.allLink", href: sectionPaths.droit },
+      titleKey: "forcesArmees.title",
+      paragraphKey: "forcesArmees.text",
+      link: { labelKey: "forcesArmees.allLink", href: sectionPaths.forcesArmees },
     },
     primaryItems: [
       {
-        labelKey: "droit.textesJuridiques.title",
-        href: `${sectionPaths.droit}/textes-juridiques`,
+        labelKey: "forcesArmees.armeeDeTerre.title",
+        href: `${sectionPaths.forcesArmees}/armee-de-terre`,
         links: [
-          { labelKey: "droit.textesJuridiques.constitution", href: `${sectionPaths.droit}/textes-juridiques/constitution` },
-          { labelKey: "droit.textesJuridiques.lois", href: `${sectionPaths.droit}/textes-juridiques/lois` },
-          { labelKey: "droit.textesJuridiques.decrets", href: `${sectionPaths.droit}/textes-juridiques/decrets` },
-          { labelKey: "droit.textesJuridiques.reglements", href: `${sectionPaths.droit}/textes-juridiques/reglements` },
+          { labelKey: "forcesArmees.armeeDeTerre.presentation", href: `${sectionPaths.forcesArmees}/armee-de-terre/presentation` },
+          { labelKey: "forcesArmees.armeeDeTerre.organisation", href: `${sectionPaths.forcesArmees}/armee-de-terre/organisation` },
+          { labelKey: "forcesArmees.armeeDeTerre.missions", href: `${sectionPaths.forcesArmees}/armee-de-terre/missions` },
+          { labelKey: "forcesArmees.armeeDeTerre.carrieres", href: `${sectionPaths.forcesArmees}/armee-de-terre/carrieres` },
         ],
       },
       {
-        labelKey: "droit.codes.title",
-        href: `${sectionPaths.droit}/codes`,
+        labelKey: "forcesArmees.marine.title",
+        href: `${sectionPaths.forcesArmees}/marine`,
         links: [
-          { labelKey: "droit.codes.codeCivil", href: `${sectionPaths.droit}/codes/code-civil` },
-          { labelKey: "droit.codes.codePenal", href: `${sectionPaths.droit}/codes/code-penal` },
-          { labelKey: "droit.codes.codeDeProcedure", href: `${sectionPaths.droit}/codes/code-de-procedure` },
-          { labelKey: "droit.codes.autresCodes", href: `${sectionPaths.droit}/codes/autres-codes` },
+          { labelKey: "forcesArmees.marine.presentation", href: `${sectionPaths.forcesArmees}/marine/presentation` },
+          { labelKey: "forcesArmees.marine.organisation", href: `${sectionPaths.forcesArmees}/marine/organisation` },
+          { labelKey: "forcesArmees.marine.missions", href: `${sectionPaths.forcesArmees}/marine/missions` },
+          { labelKey: "forcesArmees.marine.carrieres", href: `${sectionPaths.forcesArmees}/marine/carrieres` },
         ],
       },
       {
-        labelKey: "droit.jurisprudence.title",
-        href: `${sectionPaths.droit}/jurisprudence`,
+        labelKey: "forcesArmees.armeeDeLAirEtDeLEspace.title",
+        href: `${sectionPaths.forcesArmees}/armee-de-l-air-et-de-l-espace`,
         links: [
-          { labelKey: "droit.jurisprudence.decisions", href: `${sectionPaths.droit}/jurisprudence/decisions` },
-          { labelKey: "droit.jurisprudence.jurisprudenceConstitutionnelle", href: `${sectionPaths.droit}/jurisprudence/jurisprudence-constitutionnelle` },
-          { labelKey: "droit.jurisprudence.jurisprudenceJudiciaire", href: `${sectionPaths.droit}/jurisprudence/jurisprudence-judiciaire` },
-          { labelKey: "droit.jurisprudence.jurisprudenceAdministrative", href: `${sectionPaths.droit}/jurisprudence/jurisprudence-administrative` },
+          { labelKey: "forcesArmees.armeeDeLAirEtDeLEspace.presentation", href: `${sectionPaths.forcesArmees}/armee-de-l-air-et-de-l-espace/presentation` },
+          { labelKey: "forcesArmees.armeeDeLAirEtDeLEspace.organisation", href: `${sectionPaths.forcesArmees}/armee-de-l-air-et-de-l-espace/organisation` },
+          { labelKey: "forcesArmees.armeeDeLAirEtDeLEspace.missions", href: `${sectionPaths.forcesArmees}/armee-de-l-air-et-de-l-espace/missions` },
+          { labelKey: "forcesArmees.armeeDeLAirEtDeLEspace.carrieres", href: `${sectionPaths.forcesArmees}/armee-de-l-air-et-de-l-espace/carrieres` },
         ],
       },
       {
-        labelKey: "droit.rechercheJuridique.title",
-        href: `${sectionPaths.droit}/recherche-juridique`,
+        labelKey: "forcesArmees.forcesInterarmeesEtServices.title",
+        href: `${sectionPaths.forcesArmees}/forces-interarmees-et-services`,
         links: [
-          { labelKey: "droit.rechercheJuridique.rechercheDansLesTextes", href: `${sectionPaths.droit}/recherche-juridique/recherche-dans-les-textes` },
-          { labelKey: "droit.rechercheJuridique.rechercheParArticle", href: `${sectionPaths.droit}/recherche-juridique/recherche-par-article` },
-          { labelKey: "droit.rechercheJuridique.rechercheParDomaine", href: `${sectionPaths.droit}/recherche-juridique/recherche-par-domaine` },
-          { labelKey: "droit.rechercheJuridique.rechercheAvancee", href: `${sectionPaths.droit}/recherche-juridique/recherche-avancee` },
+          { labelKey: "forcesArmees.forcesInterarmeesEtServices.etatMajorDesArmees", href: `${sectionPaths.forcesArmees}/forces-interarmees-et-services/etat-major-des-armees` },
+          { labelKey: "forcesArmees.forcesInterarmeesEtServices.commandementInterarmees", href: `${sectionPaths.forcesArmees}/forces-interarmees-et-services/commandement-interarmees` },
+          { labelKey: "forcesArmees.forcesInterarmeesEtServices.forcesSpeciales", href: `${sectionPaths.forcesArmees}/forces-interarmees-et-services/forces-speciales` },
+          { labelKey: "forcesArmees.forcesInterarmeesEtServices.servicesDeSoutien", href: `${sectionPaths.forcesArmees}/forces-interarmees-et-services/services-de-soutien` },
         ],
       },
     ],
   },
   {
     type: "megaMenu",
-    labelKey: "juridictions",
-    href: sectionPaths.juridictions,
+    labelKey: "operations",
+    href: sectionPaths.operations,
     leader: {
-      titleKey: "juridictions.title",
-      paragraphKey: "juridictions.text",
-      link: { labelKey: "juridictions.allLink", href: sectionPaths.juridictions },
+      titleKey: "operations.title",
+      paragraphKey: "operations.text",
+      link: { labelKey: "operations.allLink", href: sectionPaths.operations },
     },
     primaryItems: [
       {
-        labelKey: "juridictions.ordreJudiciaire.title",
-        href: `${sectionPaths.juridictions}/ordre-judiciaire`,
+        labelKey: "operations.operationsNationales.title",
+        href: `${sectionPaths.operations}/operations-nationales`,
         links: [
-          { labelKey: "juridictions.ordreJudiciaire.courSupreme", href: `${sectionPaths.juridictions}/ordre-judiciaire/cour-supreme` },
-          { labelKey: "juridictions.ordreJudiciaire.coursDAppel", href: `${sectionPaths.juridictions}/ordre-judiciaire/cours-d-appel` },
-          { labelKey: "juridictions.ordreJudiciaire.tribunaux", href: `${sectionPaths.juridictions}/ordre-judiciaire/tribunaux` },
-          { labelKey: "juridictions.ordreJudiciaire.ministerePublic", href: `${sectionPaths.juridictions}/ordre-judiciaire/ministere-public` },
+          { labelKey: "operations.operationsNationales.protectionDuTerritoire", href: `${sectionPaths.operations}/operations-nationales/protection-du-territoire` },
+          { labelKey: "operations.operationsNationales.missionsDeSecurite", href: `${sectionPaths.operations}/operations-nationales/missions-de-securite` },
+          { labelKey: "operations.operationsNationales.soutienAuxPopulations", href: `${sectionPaths.operations}/operations-nationales/soutien-aux-populations` },
+          { labelKey: "operations.operationsNationales.secoursEtUrgence", href: `${sectionPaths.operations}/operations-nationales/secours-et-urgence` },
         ],
       },
       {
-        labelKey: "juridictions.tribunaux.title",
-        href: `${sectionPaths.juridictions}/tribunaux`,
+        labelKey: "operations.operationsExterieures.title",
+        href: `${sectionPaths.operations}/operations-exterieures`,
         links: [
-          { labelKey: "juridictions.tribunaux.tribunauxCivils", href: `${sectionPaths.juridictions}/tribunaux/tribunaux-civils` },
-          { labelKey: "juridictions.tribunaux.tribunauxPenaux", href: `${sectionPaths.juridictions}/tribunaux/tribunaux-penaux` },
-          { labelKey: "juridictions.tribunaux.tribunauxAdministratifs", href: `${sectionPaths.juridictions}/tribunaux/tribunaux-administratifs` },
-          { labelKey: "juridictions.tribunaux.annuaireDesTribunaux", href: `${sectionPaths.juridictions}/tribunaux/annuaire-des-tribunaux` },
+          { labelKey: "operations.operationsExterieures.engagementsExterieurs", href: `${sectionPaths.operations}/operations-exterieures/engagements-exterieurs` },
+          { labelKey: "operations.operationsExterieures.operationsDePaix", href: `${sectionPaths.operations}/operations-exterieures/operations-de-paix` },
+          { labelKey: "operations.operationsExterieures.cooperationOperationnelle", href: `${sectionPaths.operations}/operations-exterieures/cooperation-operationnelle` },
+          { labelKey: "operations.operationsExterieures.bilanDesOperations", href: `${sectionPaths.operations}/operations-exterieures/bilan-des-operations` },
         ],
       },
       {
-        labelKey: "juridictions.juridictionsSpecialisees.title",
-        href: `${sectionPaths.juridictions}/juridictions-specialisees`,
+        labelKey: "operations.preparationOperationnelle.title",
+        href: `${sectionPaths.operations}/preparation-operationnelle`,
         links: [
-          { labelKey: "juridictions.juridictionsSpecialisees.juridictionsCommerciales", href: `${sectionPaths.juridictions}/juridictions-specialisees/juridictions-commerciales` },
-          { labelKey: "juridictions.juridictionsSpecialisees.juridictionsFamiliales", href: `${sectionPaths.juridictions}/juridictions-specialisees/juridictions-familiales` },
-          { labelKey: "juridictions.juridictionsSpecialisees.juridictionsDuTravail", href: `${sectionPaths.juridictions}/juridictions-specialisees/juridictions-du-travail` },
-          { labelKey: "juridictions.juridictionsSpecialisees.autresJuridictionsSpecialisees", href: `${sectionPaths.juridictions}/juridictions-specialisees/autres-juridictions-specialisees` },
+          { labelKey: "operations.preparationOperationnelle.entrainement", href: `${sectionPaths.operations}/preparation-operationnelle/entrainement` },
+          { labelKey: "operations.preparationOperationnelle.exercices", href: `${sectionPaths.operations}/preparation-operationnelle/exercices` },
+          { labelKey: "operations.preparationOperationnelle.disponibiliteOperationnelle", href: `${sectionPaths.operations}/preparation-operationnelle/disponibilite-operationnelle` },
+          { labelKey: "operations.preparationOperationnelle.doctrineOperationnelle", href: `${sectionPaths.operations}/preparation-operationnelle/doctrine-operationnelle` },
         ],
       },
       {
-        labelKey: "juridictions.audiences.title",
-        href: `${sectionPaths.juridictions}/audiences`,
+        labelKey: "operations.retourDExperienceEtActualites.title",
+        href: `${sectionPaths.operations}/retour-d-experience-et-actualites`,
         links: [
-          { labelKey: "juridictions.audiences.calendrierDesAudiences", href: `${sectionPaths.juridictions}/audiences/calendrier-des-audiences` },
-          { labelKey: "juridictions.audiences.audiencesPubliques", href: `${sectionPaths.juridictions}/audiences/audiences-publiques` },
-          { labelKey: "juridictions.audiences.informationsPratiques", href: `${sectionPaths.juridictions}/audiences/informations-pratiques` },
-          { labelKey: "juridictions.audiences.rechercheDAudience", href: `${sectionPaths.juridictions}/audiences/recherche-d-une-audience` },
+          { labelKey: "operations.retourDExperienceEtActualites.retoursDExperience", href: `${sectionPaths.operations}/retour-d-experience-et-actualites/retours-d-experience` },
+          { labelKey: "operations.retourDExperienceEtActualites.enseignementsOperationnels", href: `${sectionPaths.operations}/retour-d-experience-et-actualites/enseignements-operationnels` },
+          { labelKey: "operations.retourDExperienceEtActualites.actualitesOperationnelles", href: `${sectionPaths.operations}/retour-d-experience-et-actualites/actualites-operationnelles` },
+          { labelKey: "operations.retourDExperienceEtActualites.situationOperationnelle", href: `${sectionPaths.operations}/retour-d-experience-et-actualites/situation-operationnelle` },
         ],
       },
     ],
   },
   {
     type: "megaMenu",
-    labelKey: "procedures",
-    href: sectionPaths.procedures,
+    labelKey: "renseignementCyberdefense",
+    href: sectionPaths.renseignementCyberdefense,
     leader: {
-      titleKey: "procedures.title",
-      paragraphKey: "procedures.text",
-      link: { labelKey: "procedures.allLink", href: sectionPaths.procedures },
+      titleKey: "renseignementCyberdefense.title",
+      paragraphKey: "renseignementCyberdefense.text",
+      link: {
+        labelKey: "renseignementCyberdefense.allLink",
+        href: sectionPaths.renseignementCyberdefense,
+      },
     },
     primaryItems: [
       {
-        labelKey: "procedures.civil.title",
-        href: `${sectionPaths.procedures}/civil`,
+        labelKey: "renseignementCyberdefense.renseignementMilitaire.title",
+        href: `${sectionPaths.renseignementCyberdefense}/renseignement-militaire`,
         links: [
-          { labelKey: "procedures.civil.litigesCivils", href: `${sectionPaths.procedures}/civil/litiges-civils` },
-          { labelKey: "procedures.civil.famille", href: `${sectionPaths.procedures}/civil/famille` },
-          { labelKey: "procedures.civil.successions", href: `${sectionPaths.procedures}/civil/successions` },
-          { labelKey: "procedures.civil.responsabilite", href: `${sectionPaths.procedures}/civil/responsabilite` },
+          { labelKey: "renseignementCyberdefense.renseignementMilitaire.missions", href: `${sectionPaths.renseignementCyberdefense}/renseignement-militaire/missions` },
+          { labelKey: "renseignementCyberdefense.renseignementMilitaire.organisation", href: `${sectionPaths.renseignementCyberdefense}/renseignement-militaire/organisation` },
+          { labelKey: "renseignementCyberdefense.renseignementMilitaire.cadreJuridique", href: `${sectionPaths.renseignementCyberdefense}/renseignement-militaire/cadre-juridique` },
+          { labelKey: "renseignementCyberdefense.renseignementMilitaire.cooperationInterministerielle", href: `${sectionPaths.renseignementCyberdefense}/renseignement-militaire/cooperation-interministerielle` },
         ],
       },
       {
-        labelKey: "procedures.penal.title",
-        href: `${sectionPaths.procedures}/penal`,
+        labelKey: "renseignementCyberdefense.cyberdefense.title",
+        href: `${sectionPaths.renseignementCyberdefense}/cyberdefense`,
         links: [
-          { labelKey: "procedures.penal.plainte", href: `${sectionPaths.procedures}/penal/plainte` },
-          { labelKey: "procedures.penal.enquete", href: `${sectionPaths.procedures}/penal/enquete` },
-          { labelKey: "procedures.penal.procesPenal", href: `${sectionPaths.procedures}/penal/proces-penal` },
-          { labelKey: "procedures.penal.droitsDesVictimes", href: `${sectionPaths.procedures}/penal/droits-des-victimes` },
+          { labelKey: "renseignementCyberdefense.cyberdefense.protectionDesSystemes", href: `${sectionPaths.renseignementCyberdefense}/cyberdefense/protection-des-systemes` },
+          { labelKey: "renseignementCyberdefense.cyberdefense.defenseDesReseaux", href: `${sectionPaths.renseignementCyberdefense}/cyberdefense/defense-des-reseaux` },
+          { labelKey: "renseignementCyberdefense.cyberdefense.lutteInformatiqueDefensive", href: `${sectionPaths.renseignementCyberdefense}/cyberdefense/lutte-informatique-defensive` },
+          { labelKey: "renseignementCyberdefense.cyberdefense.gestionDeCriseCyber", href: `${sectionPaths.renseignementCyberdefense}/cyberdefense/gestion-de-crise-cyber` },
         ],
       },
       {
-        labelKey: "procedures.administratif.title",
-        href: `${sectionPaths.procedures}/administratif`,
+        labelKey: "renseignementCyberdefense.securiteDesSystemesEtDeLInformation.title",
+        href: `${sectionPaths.renseignementCyberdefense}/securite-des-systemes-et-de-l-information`,
         links: [
-          { labelKey: "procedures.administratif.recoursAdministratif", href: `${sectionPaths.procedures}/administratif/recours-administratif` },
-          { labelKey: "procedures.administratif.recoursJuridictionnel", href: `${sectionPaths.procedures}/administratif/recours-juridictionnel` },
-          { labelKey: "procedures.administratif.contentieuxAdministratif", href: `${sectionPaths.procedures}/administratif/contentieux-administratif` },
-          { labelKey: "procedures.administratif.executionDesDecisions", href: `${sectionPaths.procedures}/administratif/execution-des-decisions` },
+          { labelKey: "renseignementCyberdefense.securiteDesSystemesEtDeLInformation.securiteDeLInformation", href: `${sectionPaths.renseignementCyberdefense}/securite-des-systemes-et-de-l-information/securite-de-l-information` },
+          { labelKey: "renseignementCyberdefense.securiteDesSystemesEtDeLInformation.protectionDesDonnees", href: `${sectionPaths.renseignementCyberdefense}/securite-des-systemes-et-de-l-information/protection-des-donnees` },
+          { labelKey: "renseignementCyberdefense.securiteDesSystemesEtDeLInformation.homologationEtCertification", href: `${sectionPaths.renseignementCyberdefense}/securite-des-systemes-et-de-l-information/homologation-et-certification` },
+          { labelKey: "renseignementCyberdefense.securiteDesSystemesEtDeLInformation.cryptologie", href: `${sectionPaths.renseignementCyberdefense}/securite-des-systemes-et-de-l-information/cryptologie` },
         ],
       },
       {
-        labelKey: "procedures.demarches.title",
-        href: `${sectionPaths.procedures}/demarches`,
+        labelKey: "renseignementCyberdefense.menacesInformationnelles.title",
+        href: `${sectionPaths.renseignementCyberdefense}/menaces-informationnelles`,
         links: [
-          { labelKey: "procedures.demarches.deposerUneDemande", href: `${sectionPaths.procedures}/demarches/deposer-une-demande` },
-          { labelKey: "procedures.demarches.consulterUnFormulaire", href: `${sectionPaths.procedures}/demarches/consulter-un-formulaire` },
-          { labelKey: "procedures.demarches.suivreUneProcedure", href: `${sectionPaths.procedures}/demarches/suivre-une-procedure` },
-          { labelKey: "procedures.demarches.obtenirUnDocument", href: `${sectionPaths.procedures}/demarches/obtenir-un-document` },
+          { labelKey: "renseignementCyberdefense.menacesInformationnelles.lutteContreLaDesinformation", href: `${sectionPaths.renseignementCyberdefense}/menaces-informationnelles/lutte-contre-la-desinformation` },
+          { labelKey: "renseignementCyberdefense.menacesInformationnelles.ingerencesEtrangeres", href: `${sectionPaths.renseignementCyberdefense}/menaces-informationnelles/ingerences-etrangeres` },
+          { labelKey: "renseignementCyberdefense.menacesInformationnelles.manipulationDeLInformation", href: `${sectionPaths.renseignementCyberdefense}/menaces-informationnelles/manipulation-de-l-information` },
+          { labelKey: "renseignementCyberdefense.menacesInformationnelles.sensibilisationEtPrevention", href: `${sectionPaths.renseignementCyberdefense}/menaces-informationnelles/sensibilisation-et-prevention` },
         ],
       },
     ],
   },
   {
     type: "megaMenu",
-    labelKey: "professionnels",
-    href: sectionPaths.professionnels,
+    labelKey: "personnelService",
+    href: sectionPaths.personnelService,
     leader: {
-      titleKey: "professionnels.title",
-      paragraphKey: "professionnels.text",
-      link: { labelKey: "professionnels.allLink", href: sectionPaths.professionnels },
+      titleKey: "personnelService.title",
+      paragraphKey: "personnelService.text",
+      link: { labelKey: "personnelService.allLink", href: sectionPaths.personnelService },
     },
     primaryItems: [
       {
-        labelKey: "professionnels.magistrature.title",
-        href: `${sectionPaths.professionnels}/magistrature`,
+        labelKey: "personnelService.recrutement.title",
+        href: `${sectionPaths.personnelService}/recrutement`,
         links: [
-          { labelKey: "professionnels.magistrature.magistrats", href: `${sectionPaths.professionnels}/magistrature/magistrats` },
-          { labelKey: "professionnels.magistrature.parquet", href: `${sectionPaths.professionnels}/magistrature/parquet` },
-          { labelKey: "professionnels.magistrature.statut", href: `${sectionPaths.professionnels}/magistrature/statut` },
-          { labelKey: "professionnels.magistrature.deontologie", href: `${sectionPaths.professionnels}/magistrature/deontologie` },
+          { labelKey: "personnelService.recrutement.recrutementMilitaire", href: `${sectionPaths.personnelService}/recrutement/recrutement-militaire` },
+          { labelKey: "personnelService.recrutement.recrutementCivil", href: `${sectionPaths.personnelService}/recrutement/recrutement-civil` },
+          { labelKey: "personnelService.recrutement.concours", href: `${sectionPaths.personnelService}/recrutement/concours` },
+          { labelKey: "personnelService.recrutement.commentPostuler", href: `${sectionPaths.personnelService}/recrutement/comment-postuler` },
         ],
       },
       {
-        labelKey: "professionnels.auxiliairesDeJustice.title",
-        href: `${sectionPaths.professionnels}/auxiliaires-de-justice`,
+        labelKey: "personnelService.carrieresEtParcours.title",
+        href: `${sectionPaths.personnelService}/carrieres-et-parcours`,
         links: [
-          { labelKey: "professionnels.auxiliairesDeJustice.avocats", href: `${sectionPaths.professionnels}/auxiliaires-de-justice/avocats` },
-          { labelKey: "professionnels.auxiliairesDeJustice.greffiers", href: `${sectionPaths.professionnels}/auxiliaires-de-justice/greffiers` },
-          { labelKey: "professionnels.auxiliairesDeJustice.notaires", href: `${sectionPaths.professionnels}/auxiliaires-de-justice/notaires` },
-          { labelKey: "professionnels.auxiliairesDeJustice.expertsJudiciaires", href: `${sectionPaths.professionnels}/auxiliaires-de-justice/experts-judiciaires` },
+          { labelKey: "personnelService.carrieresEtParcours.statutDesMilitaires", href: `${sectionPaths.personnelService}/carrieres-et-parcours/statut-des-militaires` },
+          { labelKey: "personnelService.carrieresEtParcours.parcoursProfessionnels", href: `${sectionPaths.personnelService}/carrieres-et-parcours/parcours-professionnels` },
+          { labelKey: "personnelService.carrieresEtParcours.mobiliteEtAffectations", href: `${sectionPaths.personnelService}/carrieres-et-parcours/mobilite-et-affectations` },
+          { labelKey: "personnelService.carrieresEtParcours.soldesEtPensions", href: `${sectionPaths.personnelService}/carrieres-et-parcours/soldes-et-pensions` },
         ],
       },
       {
-        labelKey: "professionnels.carrieres.title",
-        href: `${sectionPaths.professionnels}/carrieres`,
+        labelKey: "personnelService.formation.title",
+        href: `${sectionPaths.personnelService}/formation`,
         links: [
-          { labelKey: "professionnels.carrieres.emplois", href: `${sectionPaths.professionnels}/carrieres/emplois` },
-          { labelKey: "professionnels.carrieres.concours", href: `${sectionPaths.professionnels}/carrieres/concours` },
-          { labelKey: "professionnels.carrieres.recrutement", href: `${sectionPaths.professionnels}/carrieres/recrutement` },
-          { labelKey: "professionnels.carrieres.mobilite", href: `${sectionPaths.professionnels}/carrieres/mobilite` },
+          { labelKey: "personnelService.formation.formationInitiale", href: `${sectionPaths.personnelService}/formation/formation-initiale` },
+          { labelKey: "personnelService.formation.formationContinue", href: `${sectionPaths.personnelService}/formation/formation-continue` },
+          { labelKey: "personnelService.formation.ecolesEtCentres", href: `${sectionPaths.personnelService}/formation/ecoles-et-centres` },
+          { labelKey: "personnelService.formation.certificationEtQualifications", href: `${sectionPaths.personnelService}/formation/certification-et-qualifications` },
         ],
       },
       {
-        labelKey: "professionnels.formation.title",
-        href: `${sectionPaths.professionnels}/formation`,
+        labelKey: "personnelService.reserveEtAnciensMilitaires.title",
+        href: `${sectionPaths.personnelService}/reserve-et-anciens-militaires`,
         links: [
-          { labelKey: "professionnels.formation.formationJudiciaire", href: `${sectionPaths.professionnels}/formation/formation-judiciaire` },
-          { labelKey: "professionnels.formation.formationContinue", href: `${sectionPaths.professionnels}/formation/formation-continue` },
-          { labelKey: "professionnels.formation.ecoleDeLaMagistrature", href: `${sectionPaths.professionnels}/formation/ecole-de-la-magistrature` },
-          { labelKey: "professionnels.formation.ressourcesProfessionnelles", href: `${sectionPaths.professionnels}/formation/ressources-professionnelles` },
+          { labelKey: "personnelService.reserveEtAnciensMilitaires.reserveOperationnelle", href: `${sectionPaths.personnelService}/reserve-et-anciens-militaires/reserve-operationnelle` },
+          { labelKey: "personnelService.reserveEtAnciensMilitaires.reserveCitoyenne", href: `${sectionPaths.personnelService}/reserve-et-anciens-militaires/reserve-citoyenne` },
+          { labelKey: "personnelService.reserveEtAnciensMilitaires.anciensMilitaires", href: `${sectionPaths.personnelService}/reserve-et-anciens-militaires/anciens-militaires` },
+          { labelKey: "personnelService.reserveEtAnciensMilitaires.accompagnementSocial", href: `${sectionPaths.personnelService}/reserve-et-anciens-militaires/accompagnement-social` },
         ],
       },
     ],
   },
   {
     type: "megaMenu",
-    labelKey: "donneesRessources",
-    href: sectionPaths.donneesRessources,
+    labelKey: "capacitesIndustrie",
+    href: sectionPaths.capacitesIndustrie,
     leader: {
-      titleKey: "donneesRessources.title",
-      paragraphKey: "donneesRessources.text",
-      link: { labelKey: "donneesRessources.allLink", href: sectionPaths.donneesRessources },
+      titleKey: "capacitesIndustrie.title",
+      paragraphKey: "capacitesIndustrie.text",
+      link: {
+        labelKey: "capacitesIndustrie.allLink",
+        href: sectionPaths.capacitesIndustrie,
+      },
     },
     primaryItems: [
       {
-        labelKey: "donneesRessources.decisions.title",
-        href: `${sectionPaths.donneesRessources}/decisions`,
+        labelKey: "capacitesIndustrie.equipementsEtArmement.title",
+        href: `${sectionPaths.capacitesIndustrie}/equipements-et-armement`,
         links: [
-          { labelKey: "donneesRessources.decisions.decisionsJudiciaires", href: `${sectionPaths.donneesRessources}/decisions/decisions-judiciaires` },
-          { labelKey: "donneesRessources.decisions.decisionsConstitutionnelles", href: `${sectionPaths.donneesRessources}/decisions/decisions-constitutionnelles` },
-          { labelKey: "donneesRessources.decisions.decisionsAdministratives", href: `${sectionPaths.donneesRessources}/decisions/decisions-administratives` },
-          { labelKey: "donneesRessources.decisions.rechercheDeDecisions", href: `${sectionPaths.donneesRessources}/decisions/recherche-de-decisions` },
+          { labelKey: "capacitesIndustrie.equipementsEtArmement.equipementsDesForces", href: `${sectionPaths.capacitesIndustrie}/equipements-et-armement/equipements-des-forces` },
+          { labelKey: "capacitesIndustrie.equipementsEtArmement.armement", href: `${sectionPaths.capacitesIndustrie}/equipements-et-armement/armement` },
+          { labelKey: "capacitesIndustrie.equipementsEtArmement.maintienEnCondition", href: `${sectionPaths.capacitesIndustrie}/equipements-et-armement/maintien-en-condition` },
+          { labelKey: "capacitesIndustrie.equipementsEtArmement.modernisation", href: `${sectionPaths.capacitesIndustrie}/equipements-et-armement/modernisation` },
         ],
       },
       {
-        labelKey: "donneesRessources.statistiques.title",
-        href: `${sectionPaths.donneesRessources}/statistiques`,
+        labelKey: "capacitesIndustrie.programmesEtAcquisitions.title",
+        href: `${sectionPaths.capacitesIndustrie}/programmes-et-acquisitions`,
         links: [
-          { labelKey: "donneesRessources.statistiques.activiteJudiciaire", href: `${sectionPaths.donneesRessources}/statistiques/activite-judiciaire` },
-          { labelKey: "donneesRessources.statistiques.justicePenale", href: `${sectionPaths.donneesRessources}/statistiques/justice-penale` },
-          { labelKey: "donneesRessources.statistiques.justiceCivile", href: `${sectionPaths.donneesRessources}/statistiques/justice-civile` },
-          { labelKey: "donneesRessources.statistiques.statistiquesAnnuelles", href: `${sectionPaths.donneesRessources}/statistiques/statistiques-annuelles` },
+          { labelKey: "capacitesIndustrie.programmesEtAcquisitions.programmesDarmement", href: `${sectionPaths.capacitesIndustrie}/programmes-et-acquisitions/programmes-d-armement` },
+          { labelKey: "capacitesIndustrie.programmesEtAcquisitions.equipementsFuturs", href: `${sectionPaths.capacitesIndustrie}/programmes-et-acquisitions/equipements-futurs` },
+          { labelKey: "capacitesIndustrie.programmesEtAcquisitions.commandesEtLivraisons", href: `${sectionPaths.capacitesIndustrie}/programmes-et-acquisitions/commandes-et-livraisons` },
+          { labelKey: "capacitesIndustrie.programmesEtAcquisitions.cooperationDarmement", href: `${sectionPaths.capacitesIndustrie}/programmes-et-acquisitions/cooperation-d-armement` },
         ],
       },
       {
-        labelKey: "donneesRessources.publications.title",
-        href: `${sectionPaths.donneesRessources}/publications`,
+        labelKey: "capacitesIndustrie.industrieDeDefense.title",
+        href: `${sectionPaths.capacitesIndustrie}/industrie-de-defense`,
         links: [
-          { labelKey: "donneesRessources.publications.rapports", href: `${sectionPaths.donneesRessources}/publications/rapports` },
-          { labelKey: "donneesRessources.publications.etudes", href: `${sectionPaths.donneesRessources}/publications/etudes` },
-          { labelKey: "donneesRessources.publications.guides", href: `${sectionPaths.donneesRessources}/publications/guides` },
-          { labelKey: "donneesRessources.publications.archives", href: `${sectionPaths.donneesRessources}/publications/archives` },
+          { labelKey: "capacitesIndustrie.industrieDeDefense.filiereIndustrielle", href: `${sectionPaths.capacitesIndustrie}/industrie-de-defense/filiere-industrielle` },
+          { labelKey: "capacitesIndustrie.industrieDeDefense.entreprisesEtPme", href: `${sectionPaths.capacitesIndustrie}/industrie-de-defense/entreprises-et-pme` },
+          { labelKey: "capacitesIndustrie.industrieDeDefense.exportationsDeDefense", href: `${sectionPaths.capacitesIndustrie}/industrie-de-defense/exportations-de-defense` },
+          { labelKey: "capacitesIndustrie.industrieDeDefense.souveraineteIndustrielle", href: `${sectionPaths.capacitesIndustrie}/industrie-de-defense/souverainete-industrielle` },
         ],
       },
       {
-        labelKey: "donneesRessources.donneesOuvertes.title",
-        href: `${sectionPaths.donneesRessources}/donnees-ouvertes`,
+        labelKey: "capacitesIndustrie.rechercheEtInnovation.title",
+        href: `${sectionPaths.capacitesIndustrie}/recherche-et-innovation`,
         links: [
-          { labelKey: "donneesRessources.donneesOuvertes.jeuxDeDonnees", href: `${sectionPaths.donneesRessources}/donnees-ouvertes/jeux-de-donnees` },
-          { labelKey: "donneesRessources.donneesOuvertes.api", href: `${sectionPaths.donneesRessources}/donnees-ouvertes/api` },
-          { labelKey: "donneesRessources.donneesOuvertes.reutilisation", href: `${sectionPaths.donneesRessources}/donnees-ouvertes/reutilisation` },
-          { labelKey: "donneesRessources.donneesOuvertes.documentation", href: `${sectionPaths.donneesRessources}/donnees-ouvertes/documentation` },
+          { labelKey: "capacitesIndustrie.rechercheEtInnovation.rechercheDeDefense", href: `${sectionPaths.capacitesIndustrie}/recherche-et-innovation/recherche-de-defense` },
+          { labelKey: "capacitesIndustrie.rechercheEtInnovation.innovation", href: `${sectionPaths.capacitesIndustrie}/recherche-et-innovation/innovation` },
+          { labelKey: "capacitesIndustrie.rechercheEtInnovation.technologiesEmergentes", href: `${sectionPaths.capacitesIndustrie}/recherche-et-innovation/technologies-emergentes` },
+          { labelKey: "capacitesIndustrie.rechercheEtInnovation.agencesEtOperateurs", href: `${sectionPaths.capacitesIndustrie}/recherche-et-innovation/agences-et-operateurs` },
         ],
       },
     ],
@@ -605,19 +623,19 @@ export const primaryNavigation: ReadonlyArray<NavigationSection> = [
         href: `${sectionPaths.leMinistere}/administration`,
         links: [
           { labelKey: "leMinistere.administration.servicesDuMinistere", href: `${sectionPaths.leMinistere}/administration/services-du-ministere` },
-          { labelKey: "leMinistere.administration.administrationJudiciaire", href: `${sectionPaths.leMinistere}/administration/administration-judiciaire` },
-          { labelKey: "leMinistere.administration.budget", href: `${sectionPaths.leMinistere}/administration/budget` },
-          { labelKey: "leMinistere.administration.marchesPublics", href: `${sectionPaths.leMinistere}/administration/marches-publics` },
+          { labelKey: "leMinistere.administration.administrationCentrale", href: `${sectionPaths.leMinistere}/administration/administration-centrale` },
+          { labelKey: "leMinistere.administration.servicesDeconcentres", href: `${sectionPaths.leMinistere}/administration/services-deconcentres` },
+          { labelKey: "leMinistere.administration.etablissementsPublics", href: `${sectionPaths.leMinistere}/administration/etablissements-publics` },
         ],
       },
       {
-        labelKey: "leMinistere.transparence.title",
-        href: `${sectionPaths.leMinistere}/transparence`,
+        labelKey: "leMinistere.budgetEtTransparence.title",
+        href: `${sectionPaths.leMinistere}/budget-et-transparence`,
         links: [
-          { labelKey: "leMinistere.transparence.budgetEtFinances", href: `${sectionPaths.leMinistere}/transparence/budget-et-finances` },
-          { labelKey: "leMinistere.transparence.donneesPubliques", href: `${sectionPaths.leMinistere}/transparence/donnees-publiques` },
-          { labelKey: "leMinistere.transparence.rapportsDActivite", href: `${sectionPaths.leMinistere}/transparence/rapports-d-activite` },
-          { labelKey: "leMinistere.transparence.deontologie", href: `${sectionPaths.leMinistere}/transparence/deontologie` },
+          { labelKey: "leMinistere.budgetEtTransparence.budgetDeLaDefense", href: `${sectionPaths.leMinistere}/budget-et-transparence/budget-de-la-defense` },
+          { labelKey: "leMinistere.budgetEtTransparence.rapportsDActivite", href: `${sectionPaths.leMinistere}/budget-et-transparence/rapports-d-activite` },
+          { labelKey: "leMinistere.budgetEtTransparence.donneesPubliques", href: `${sectionPaths.leMinistere}/budget-et-transparence/donnees-publiques` },
+          { labelKey: "leMinistere.budgetEtTransparence.marchesPublics", href: `${sectionPaths.leMinistere}/budget-et-transparence/marches-publics` },
         ],
       },
       {
@@ -626,7 +644,7 @@ export const primaryNavigation: ReadonlyArray<NavigationSection> = [
         links: [
           { labelKey: "leMinistere.actualitesEtContact.actualites", href: `${sectionPaths.leMinistere}/actualites-et-contact/actualites` },
           { labelKey: "leMinistere.actualitesEtContact.communiques", href: `${sectionPaths.leMinistere}/actualites-et-contact/communiques` },
-          { labelKey: "leMinistere.actualitesEtContact.agenda", href: `${sectionPaths.leMinistere}/actualites-et-contact/agenda` },
+          { labelKey: "leMinistere.actualitesEtContact.publications", href: `${sectionPaths.leMinistere}/actualites-et-contact/publications` },
           { labelKey: "leMinistere.actualitesEtContact.contact", href: `${sectionPaths.leMinistere}/actualites-et-contact/contact` },
         ],
       },

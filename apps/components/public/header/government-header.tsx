@@ -102,6 +102,10 @@ export function GovernmentHeader() {
     return {
       isActive,
       text: tPrimaryNav(section.labelKey),
+      // The seven themes must each stay on a single, aligned line: the DSFR
+      // nav buttons shrink and wrap their label by default, so every theme
+      // button keeps its label unwrapped.
+      buttonProps: { style: { whiteSpace: "nowrap" } },
       megaMenu: {
         leader: {
           title: tNavPanel(section.leader.titleKey),

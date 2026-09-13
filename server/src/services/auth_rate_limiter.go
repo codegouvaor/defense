@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	redisclient "github.com/codegouvaor/justice/server/internal/redis"
+	redisclient "github.com/codegouvaor/defense/server/internal/redis"
 )
 
 type AuthRateLimiter struct {

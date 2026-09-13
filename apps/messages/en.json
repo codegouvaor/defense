@@ -1,0 +1,1015 @@
+{
+  "meta": {
+    "defaultTitle": "Ministry of Defense and the Armed Forces",
+    "suffix": "Ministry of Defense and the Armed Forces",
+    "description": "The official portal of the Ministry of Defense and the Armed Forces of the Republic of Astoria.",
+    "searchPlaceholder": "Search"
+  },
+  "home": {
+    "metaTitle": "Ministry of Defense and the Armed Forces — Republic of Astoria",
+    "hero": {
+      "kicker": "Ministry of Defense and the Armed Forces",
+      "title": "Defending the Republic",
+      "lead": "Protecting the Republic, preserving its sovereignty and guaranteeing its capacity to defend its citizens and its interests.",
+      "ctaPolicy": "Defense policy",
+      "ctaArmedForces": "Discover the Armed Forces",
+      "searchTitle": "Search the portal",
+      "searchLabel": "Search",
+      "searchPlaceholder": "Your search (e.g. recruitment, cyber defense…)",
+      "popularLabel": "Popular searches:",
+      "popular": {
+        "recrutement": "Recruitment",
+        "reserve": "Reserve",
+        "cyberdefense": "Cyber defense",
+        "budget": "Defense budget"
+      }
+    },
+    "news": {
+      "kicker": "News",
+      "title": "Defense news",
+      "lead": "The latest news and upcoming events of the ministry.",
+      "featured": {
+        "tag": "News",
+        "title": "Military programming: strengthening the Nation's capabilities",
+        "text": "The ministry presents the main orientations of military programming, serving the sovereignty and protection of the Republic.",
+        "date": "12 September 2026"
+      },
+      "secondary": {
+        "cyber": {
+          "tag": "Press release",
+          "title": "Cyber defense, a priority of the national strategy",
+          "date": "8 September 2026"
+        },
+        "reserve": {
+          "tag": "News",
+          "title": "The operational reserve: a citizen commitment serving defense",
+          "date": "2 September 2026"
+        }
+      },
+      "event": {
+        "tag": "Event",
+        "title": "International defense and security exhibition",
+        "date": "14–17 October 2026"
+      },
+      "cta": {
+        "actualites": "News",
+        "communiques": "Press releases",
+        "agenda": "Agenda"
+      }
+    },
+    "priorities": {
+      "kicker": "Strategy",
+      "title": "Defense priorities",
+      "lead": "Four orientations guide the Republic's defense policy.",
+      "items": {
+        "souverainete": {
+          "title": "Sovereignty",
+          "desc": "Guaranteeing the Republic's strategic autonomy and its freedom of assessment and action."
+        },
+        "protection": {
+          "title": "Protection",
+          "desc": "Protecting the territory, the population and the national interests."
+        },
+        "anticipation": {
+          "title": "Anticipation",
+          "desc": "Identifying and understanding future threats to inform decision-making."
+        },
+        "resilience": {
+          "title": "Resilience",
+          "desc": "Maintaining the continuity of the State and defense capabilities in the face of crises."
+        }
+      }
+    },
+    "armedForces": {
+      "kicker": "Components",
+      "title": "The Armed Forces",
+      "lead": "The military instrument of the Republic's defense.",
+      "text": "The Armed Forces constitute the military instrument of the Republic's defense. Their organization and activities are presented on the Armed Forces portal.",
+      "cta": "Discover the Armed Forces",
+      "items": {
+        "armeeDeTerre": {
+          "desc": "The land component of the armed forces."
+        },
+        "marine": {
+          "desc": "Naval power in the service of the Nation."
+        },
+        "airEspace": {
+          "desc": "Mastery of air and space."
+        },
+        "interarmees": {
+          "desc": "Joint command and common services of the forces."
+        }
+      }
+    },
+    "operations": {
+      "kicker": "Engagement",
+      "title": "Operations",
+      "lead": "The armed forces serving the defense and security of the Republic.",
+      "items": {
+        "nationales": {
+          "title": "Domestic operations",
+          "desc": "Territorial protection, security and assistance to populations."
+        },
+        "exterieures": {
+          "title": "External operations",
+          "desc": "The engagement of forces beyond the borders."
+        },
+        "exercices": {
+          "title": "Exercises and training",
+          "desc": "The operational readiness of the forces."
+        },
+        "cooperation": {
+          "title": "Military cooperation",
+          "desc": "Partnerships and cooperation between armed forces."
+        }
+      }
+    },
+    "intelligence": {
+      "kicker": "Protection",
+      "title": "Intelligence & Cyber Defense",
+      "lead": "Understanding threats and protecting the Nation in cyberspace.",
+      "cta": "All about intelligence and cyber defense",
+      "renseignement": {
+        "kicker": "Understand",
+        "title": "Military intelligence",
+        "lead": "Understanding threats, anticipating crises and informing strategic decision-making.",
+        "items": {
+          "missions": {
+            "label": "The missions of military intelligence"
+          },
+          "cooperation": {
+            "label": "Interministerial cooperation"
+          }
+        }
+      },
+      "cyber": {
+        "kicker": "Protect",
+        "title": "Cyber defense",
+        "lead": "Protecting the systems, networks and communications that contribute to national defense.",
+        "items": {
+          "protection": {
+            "label": "Protecting information systems"
+          },
+          "crise": {
+            "label": "Cyber crisis management"
+          }
+        }
+      }
+    },
+    "capabilities": {
+      "kicker": "Means",
+      "title": "Capabilities & Industry",
+      "lead": "Building and maintaining the Republic's defense capabilities.",
+      "cta": "All about capabilities and industry",
+      "items": {
+        "equipements": {
+          "title": "Equipment",
+          "desc": "The equipment and armament of the armed forces."
+        },
+        "programmes": {
+          "title": "Programs",
+          "desc": "Managing equipment and acquisition programs."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "desc": "Defense research and technologies."
+        },
+        "industrie": {
+          "title": "Defense industry",
+          "desc": "The industrial base and technological sovereignty."
+        }
+      }
+    },
+    "serve": {
+      "kicker": "Human resources",
+      "title": "Serving the Republic",
+      "lead": "National defense rests on the women and men who choose to serve the Republic.",
+      "text": "Service members, civilians, reservists: many paths allow one to serve national defense. Detailed recruitment and military life are presented on the Armed Forces portal.",
+      "cta": "Join the Armed Forces",
+      "items": {
+        "militaires": {
+          "title": "Military careers",
+          "desc": "Choosing a career within the Armed Forces."
+        },
+        "civils": {
+          "title": "Civilian careers",
+          "desc": "Working at the Ministry of Defense and the Armed Forces."
+        },
+        "reserve": {
+          "title": "The reserve",
+          "desc": "Serving alongside the armed forces."
+        },
+        "formation": {
+          "title": "Training",
+          "desc": "Defense schools and training pathways."
+        }
+      }
+    },
+    "statements": {
+      "kicker": "Official word",
+      "title": "Speeches & decisions",
+      "lead": "What the ministry officially says, decides and publishes.",
+      "items": {
+        "discours": {
+          "title": "Speeches",
+          "desc": "The statements of the Minister of Defense."
+        },
+        "communiques": {
+          "title": "Press releases",
+          "desc": "The ministry's official statements."
+        },
+        "decisions": {
+          "title": "Decisions",
+          "desc": "Decisions and appointments."
+        },
+        "publications": {
+          "title": "Publications and reports",
+          "desc": "The ministry's public documents."
+        },
+        "donnees": {
+          "title": "Public data",
+          "desc": "Open defense data."
+        }
+      }
+    },
+    "ministry": {
+      "kicker": "Institution",
+      "title": "The Ministry",
+      "lead": "Understand the organization, the budget and the official resources of the Ministry of Defense and the Armed Forces.",
+      "links": {
+        "ministre": {
+          "title": "The Minister"
+        },
+        "organisation": {
+          "title": "Organization"
+        },
+        "budget": {
+          "title": "Defense budget"
+        },
+        "transparence": {
+          "title": "Transparency"
+        },
+        "marches": {
+          "title": "Public procurement"
+        },
+        "contact": {
+          "title": "Contact"
+        }
+      }
+    }
+  },
+  "brand": {
+    "republicName": "Republic of Astoria"
+  },
+  "header": {
+    "homeTitle": "Back to home — Ministry of Defense and the Armed Forces",
+    "myGouv": "My account",
+    "serviceTitle": "Ministry of Defense and the Armed Forces",
+    "serviceTagline": "Preparing and conducting the defense of the Republic and its interests.",
+    "accountLabel": "My account",
+    "logoutLink": "Log out",
+    "account": {
+      "profile": "My profile",
+      "settings": "Settings"
+    }
+  },
+  "common": {
+    "skipToContent": "Skip to content",
+    "skipToFooter": "Skip to footer",
+    "backToTop": {
+      "ariaLabel": "Back to top"
+    },
+    "cookiePopup": {
+      "ariaLabel": "Cookie information",
+      "title": "Cookie management",
+      "message": "We use cookies to measure the portal's audience and improve your experience.",
+      "accept": "Accept",
+      "decline": "Decline",
+      "manage": "Manage my preferences"
+    }
+  },
+  "footer": {
+    "contentDescription": "The official portal of the Ministry of Defense and the Armed Forces of the Republic of Astoria.",
+    "license": "Unless otherwise stated, all the content of this site is under the <link>APSL Licence</link>.",
+    "bottom": {
+      "contact": "Contact",
+      "planDuPortail": "Sitemap",
+      "documentsOpposables": "Opposable documents",
+      "privacy": "Personal data",
+      "cookies": "Cookie management",
+      "publications": "Official publications"
+    }
+  },
+  "stayInTouch": {
+    "newsletter": {
+      "title": "Newsletter",
+      "desc": "Receive the news of the Ministry of Defense and the Armed Forces.",
+      "label": "Email address",
+      "placeholder": "Your email address",
+      "submit": "Subscribe",
+      "success": "Your subscription has been recorded.",
+      "invalidEmail": "Please enter a valid email address.",
+      "hint": "You can unsubscribe at any time."
+    },
+    "follow": {
+      "title": "Follow us",
+      "items": {
+        "x": "X (formerly Twitter)",
+        "facebook": "Facebook",
+        "linkedin": "LinkedIn",
+        "instagram": "Instagram",
+        "threads": "Threads"
+      }
+    }
+  },
+  "nav": {
+    "primary": {
+      "defenseNationale": "National Defense",
+      "forcesArmees": "Armed Forces",
+      "operations": "Operations",
+      "renseignementCyberdefense": "Intelligence & Cyber Defense",
+      "personnelService": "Personnel & Service",
+      "capacitesIndustrie": "Capabilities & Industry",
+      "leMinistere": "The Ministry"
+    },
+    "panel": {
+      "defenseNationale": {
+        "title": "National Defense",
+        "text": "The Republic's defense policy and national defense strategy.",
+        "allLink": "All about national defense",
+        "strategieDeDefense": {
+          "title": "Defense strategy",
+          "strategieNationale": "National defense strategy",
+          "revueStrategique": "Strategic review",
+          "doctrineDemploiDesForces": "Doctrine for the use of forces",
+          "documentsDeReference": "Reference documents"
+        },
+        "politiqueDeDefense": {
+          "title": "Defense policy",
+          "priorites": "Defense policy priorities",
+          "programmationMilitaire": "Military programming",
+          "dissuasion": "Deterrence",
+          "alliancesEtTraites": "Alliances and treaties"
+        },
+        "planificationEtPreparation": {
+          "title": "Planning and preparedness",
+          "planificationDeDefense": "Defense planning",
+          "preparationDeLaDefense": "Defense preparedness",
+          "mobilisationNationale": "National mobilization",
+          "plansDeDefense": "Defense plans"
+        },
+        "souveraineteEtResilience": {
+          "title": "Sovereignty and resilience",
+          "souveraineteNationale": "National sovereignty",
+          "resilienceNationale": "National resilience",
+          "securiteNationale": "National security",
+          "protectionDesInteretsVitaux": "Protection of vital interests"
+        }
+      },
+      "forcesArmees": {
+        "title": "Armed Forces",
+        "text": "The military components and their organization at the institutional level.",
+        "allLink": "All about the armed forces",
+        "armeeDeTerre": {
+          "title": "Army",
+          "presentation": "Overview",
+          "organisation": "Organization",
+          "missions": "Missions",
+          "carrieres": "Careers"
+        },
+        "marine": {
+          "title": "Navy",
+          "presentation": "Overview",
+          "organisation": "Organization",
+          "missions": "Missions",
+          "carrieres": "Careers"
+        },
+        "armeeDeLAirEtDeLEspace": {
+          "title": "Air and Space Force",
+          "presentation": "Overview",
+          "organisation": "Organization",
+          "missions": "Missions",
+          "carrieres": "Careers"
+        },
+        "forcesInterarmeesEtServices": {
+          "title": "Joint forces and services",
+          "etatMajorDesArmees": "Defense Staff",
+          "commandementInterarmees": "Joint command",
+          "forcesSpeciales": "Special forces",
+          "servicesDeSoutien": "Support services"
+        }
+      },
+      "operations": {
+        "title": "Operations",
+        "text": "The engagement of the armed forces at home and abroad.",
+        "allLink": "All about operations",
+        "operationsNationales": {
+          "title": "Domestic operations",
+          "protectionDuTerritoire": "Territorial protection",
+          "missionsDeSecurite": "Security missions",
+          "soutienAuxPopulations": "Support to populations",
+          "secoursEtUrgence": "Relief and emergency"
+        },
+        "operationsExterieures": {
+          "title": "External operations",
+          "engagementsExterieurs": "External engagements",
+          "operationsDePaix": "Peace operations",
+          "cooperationOperationnelle": "Operational cooperation",
+          "bilanDesOperations": "Operations review"
+        },
+        "preparationOperationnelle": {
+          "title": "Operational readiness",
+          "entrainement": "Training",
+          "exercices": "Exercises",
+          "disponibiliteOperationnelle": "Operational availability",
+          "doctrineOperationnelle": "Operational doctrine"
+        },
+        "retourDExperienceEtActualites": {
+          "title": "Lessons learned and news",
+          "retoursDExperience": "Lessons learned",
+          "enseignementsOperationnels": "Operational lessons",
+          "actualitesOperationnelles": "Operational news",
+          "situationOperationnelle": "Operational situation"
+        }
+      },
+      "renseignementCyberdefense": {
+        "title": "Intelligence & Cyber Defense",
+        "text": "Military intelligence and the protection of the Nation in cyberspace.",
+        "allLink": "All about intelligence and cyber defense",
+        "renseignementMilitaire": {
+          "title": "Military intelligence",
+          "missions": "Missions",
+          "organisation": "Organization",
+          "cadreJuridique": "Legal framework",
+          "cooperationInterministerielle": "Interministerial cooperation"
+        },
+        "cyberdefense": {
+          "title": "Cyber defense",
+          "protectionDesSystemes": "Systems protection",
+          "defenseDesReseaux": "Network defense",
+          "lutteInformatiqueDefensive": "Defensive cyber operations",
+          "gestionDeCriseCyber": "Cyber crisis management"
+        },
+        "securiteDesSystemesEtDeLInformation": {
+          "title": "Systems and information security",
+          "securiteDeLInformation": "Information security",
+          "protectionDesDonnees": "Data protection",
+          "homologationEtCertification": "Approval and certification",
+          "cryptologie": "Cryptology"
+        },
+        "menacesInformationnelles": {
+          "title": "Information threats",
+          "lutteContreLaDesinformation": "Countering disinformation",
+          "ingerencesEtrangeres": "Foreign interference",
+          "manipulationDeLInformation": "Information manipulation",
+          "sensibilisationEtPrevention": "Awareness and prevention"
+        }
+      },
+      "personnelService": {
+        "title": "Personnel & Service",
+        "text": "The women and men who serve defense: recruitment, careers, training, reserves.",
+        "allLink": "All about personnel and service",
+        "recrutement": {
+          "title": "Recruitment",
+          "recrutementMilitaire": "Military recruitment",
+          "recrutementCivil": "Civilian recruitment",
+          "concours": "Competitive examinations",
+          "commentPostuler": "How to apply"
+        },
+        "carrieresEtParcours": {
+          "title": "Careers and paths",
+          "statutDesMilitaires": "Status of military personnel",
+          "parcoursProfessionnels": "Professional paths",
+          "mobiliteEtAffectations": "Mobility and postings",
+          "soldesEtPensions": "Pay and pensions"
+        },
+        "formation": {
+          "title": "Training",
+          "formationInitiale": "Initial training",
+          "formationContinue": "Continuing education",
+          "ecolesEtCentres": "Schools and centers",
+          "certificationEtQualifications": "Certification and qualifications"
+        },
+        "reserveEtAnciensMilitaires": {
+          "title": "Reserves and veterans",
+          "reserveOperationnelle": "Operational reserve",
+          "reserveCitoyenne": "Citizen reserve",
+          "anciensMilitaires": "Veterans",
+          "accompagnementSocial": "Social support"
+        }
+      },
+      "capacitesIndustrie": {
+        "title": "Capabilities & Industry",
+        "text": "Equipment, programs and the defense industrial policy.",
+        "allLink": "All about capabilities and industry",
+        "equipementsEtArmement": {
+          "title": "Equipment and armament",
+          "equipementsDesForces": "Armed forces equipment",
+          "armement": "Armament",
+          "maintienEnCondition": "Maintenance and readiness",
+          "modernisation": "Modernization"
+        },
+        "programmesEtAcquisitions": {
+          "title": "Programs and acquisitions",
+          "programmesDarmement": "Armament programs",
+          "equipementsFuturs": "Future equipment",
+          "commandesEtLivraisons": "Orders and deliveries",
+          "cooperationDarmement": "Armament cooperation"
+        },
+        "industrieDeDefense": {
+          "title": "Defense industry",
+          "filiereIndustrielle": "Industrial base",
+          "entreprisesEtPme": "Companies and SMEs",
+          "exportationsDeDefense": "Defense exports",
+          "souveraineteIndustrielle": "Industrial sovereignty"
+        },
+        "rechercheEtInnovation": {
+          "title": "Research and innovation",
+          "rechercheDeDefense": "Defense research",
+          "innovation": "Innovation",
+          "technologiesEmergentes": "Emerging technologies",
+          "agencesEtOperateurs": "Agencies and operators"
+        }
+      },
+      "leMinistere": {
+        "title": "The Ministry",
+        "text": "The institution, its administration, its budget and its transparency.",
+        "allLink": "All about the ministry",
+        "institution": {
+          "title": "Institution",
+          "leMinistre": "The Minister",
+          "missions": "Missions",
+          "organisation": "Organization",
+          "organigramme": "Organization chart"
+        },
+        "administration": {
+          "title": "Administration",
+          "servicesDuMinistere": "Ministry services",
+          "administrationCentrale": "Central administration",
+          "servicesDeconcentres": "Deconcentrated services",
+          "etablissementsPublics": "Public establishments"
+        },
+        "budgetEtTransparence": {
+          "title": "Budget and transparency",
+          "budgetDeLaDefense": "Defense budget",
+          "rapportsDActivite": "Activity reports",
+          "donneesPubliques": "Public data",
+          "marchesPublics": "Public procurement"
+        },
+        "actualitesEtContact": {
+          "title": "News and contact",
+          "actualites": "News",
+          "communiques": "Press releases",
+          "publications": "Official publications",
+          "contact": "Contact"
+        }
+      }
+    }
+  },
+  "pages": {
+    "contact": {
+      "meta": {
+        "title": "Contact",
+        "description": "Contact the Ministry of Defense and the Armed Forces of the Republic of Astoria."
+      },
+      "hero": {
+        "kicker": "Contact",
+        "title": "Contact us",
+        "lead": "A question, a request for information or a press enquiry? Send your message to the relevant service."
+      },
+      "formSection": {
+        "kicker": "Form",
+        "title": "Write to the ministry",
+        "lead": "Select a recipient, then enter your message."
+      },
+      "channels": {
+        "kicker": "Contact details",
+        "title": "Reach us",
+        "lead": "Contact details of the ministry's services.",
+        "facts": {
+          "email": {
+            "label": "Email",
+            "value": "contact@defense.gouv.aor"
+          },
+          "phone": {
+            "label": "Phone",
+            "value": "+000 00 00 00 00"
+          },
+          "address": {
+            "label": "Address",
+            "value": "Ministry of Defense and the Armed Forces, Republic of Astoria"
+          },
+          "hours": {
+            "label": "Opening hours",
+            "value": "Monday to Friday, 9 a.m. to 5 p.m."
+          }
+        }
+      },
+      "recipients": {
+        "presidence": "Presidency of the Republic",
+        "communications": "Communication department",
+        "presse": "Press office",
+        "monnaie": "Directorate General of Armament",
+        "etablissements": "Establishments and services"
+      },
+      "form": {
+        "recipientLabel": "Recipient",
+        "selectRecipient": "Select a recipient",
+        "presidency": "Presidency of the Republic",
+        "nameLabel": "Full name",
+        "namePlaceholder": "Your full name",
+        "emailFieldLabel": "Email address",
+        "emailPlaceholder": "your.address@example.aor",
+        "subjectLabel": "Subject",
+        "subjectPlaceholder": "Subject of your message",
+        "messageLabel": "Message",
+        "messagePlaceholder": "Your message",
+        "requiredField": "This field is required.",
+        "invalidEmail": "Please enter a valid email address.",
+        "sendButton": "Send"
+      }
+    },
+    "sitemap": {
+      "meta": {
+        "title": "Sitemap",
+        "description": "Sitemap of the Ministry of Defense and the Armed Forces portal."
+      },
+      "hero": {
+        "kicker": "Navigation",
+        "title": "Sitemap",
+        "lead": "Browse all the sections and services of the portal."
+      },
+      "sections": {
+        "portail": {
+          "kicker": "Sections",
+          "title": "Portal sections",
+          "lead": "The institutional architecture of the ministry."
+        },
+        "transversal": {
+          "kicker": "Information",
+          "title": "Transversal pages",
+          "lead": "Information pages and legal documents.",
+          "links": {
+            "contact": "Contact",
+            "accessibility": "Accessibility",
+            "privacy": "Personal data",
+            "terms": "Terms of use",
+            "cookies": "Cookie management",
+            "publications": "Official publications",
+            "documentsOpposables": "Opposable documents"
+          }
+        }
+      }
+    },
+    "legal": {
+      "meta": {
+        "title": "Legal information",
+        "description": "Legal information of the Ministry of Defense and the Armed Forces portal."
+      },
+      "landing": {
+        "hero": {
+          "kicker": "Legal information",
+          "title": "Legal information",
+          "lead": "Find the legal documents and commitments of the portal.",
+          "notice": "This information may change."
+        }
+      },
+      "related": {
+        "title": "Legal documents",
+        "kicker": "To consult",
+        "accessibility": {
+          "label": "Accessibility statement",
+          "desc": "The portal's digital accessibility commitment."
+        },
+        "privacy": {
+          "label": "Data protection policy",
+          "desc": "The processing of personal data."
+        },
+        "terms": {
+          "label": "Terms of use",
+          "desc": "The rules for using the portal."
+        },
+        "cookies": {
+          "label": "Cookie management policy",
+          "desc": "The cookies set and their purpose."
+        },
+        "sitemap": {
+          "label": "Sitemap",
+          "desc": "All the sections of the portal."
+        }
+      },
+      "accessibility": {
+        "meta": {
+          "title": "Accessibility statement",
+          "description": "Accessibility statement of the Ministry of Defense and the Armed Forces portal."
+        },
+        "hero": {
+          "kicker": "Accessibility",
+          "title": "Accessibility statement",
+          "lead": "The ministry is committed to making its portal accessible to all users.",
+          "notice": "This statement was drawn up in accordance with the accessibility standards in force."
+        },
+        "sections": {
+          "declaration": {
+            "kicker": "Commitment",
+            "title": "Statement of commitment",
+            "lead": "The ministry is committed to continuously improving the accessibility of its portal.",
+            "paragraphs": {
+              "p1": "Digital accessibility is a condition for equal access to public services. The ministry ensures that its portal can be used by everyone, including people with disabilities.",
+              "p2": "This commitment is reflected in regular audits, the correction of non-conformities and the training of teams."
+            }
+          },
+          "conformite": {
+            "kicker": "Compliance",
+            "title": "Compliance status",
+            "lead": "The portal is assessed against the standards in force.",
+            "bullets": {
+              "b1": "The main pages meet the basic accessibility criteria.",
+              "b2": "Corrections are made on an ongoing basis to existing content.",
+              "b3": "A full audit is scheduled to confirm the level of compliance."
+            }
+          },
+          "nonAccessibles": {
+            "kicker": "Points of attention",
+            "title": "Non-accessible content",
+            "lead": "Some content may present temporary access difficulties.",
+            "bullets": {
+              "b1": "Documents published in older formats may not be fully accessible.",
+              "b2": "Some embedded applications may have shortcomings.",
+              "b3": "Content in foreign languages may not have alternatives."
+            }
+          },
+          "etablissement": {
+            "kicker": "Method",
+            "title": "Drawing up of this statement",
+            "lead": "This statement describes the assessment process implemented.",
+            "facts": {
+              "tests": {
+                "label": "Tests performed",
+                "value": "Internal audit and user testing"
+              },
+              "referentiel": {
+                "label": "Standard",
+                "value": "Accessibility standard in force"
+              },
+              "outils": {
+                "label": "Tools",
+                "value": "Automated and manual assessment tools"
+              }
+            }
+          },
+          "retour": {
+            "kicker": "Contact",
+            "title": "Feedback and contact",
+            "lead": "If you encounter an accessibility problem, you can report it to us.",
+            "paragraphs": {
+              "p1": "You can send your comments to the relevant service through the portal's contact page."
+            }
+          },
+          "voiesRecours": {
+            "kicker": "Remedies",
+            "title": "Remedies",
+            "lead": "In the event of a persistent difficulty, remedies are available.",
+            "bullets": {
+              "b1": "You can refer the matter to the competent mediator.",
+              "b2": "You can file a complaint with the administration.",
+              "b3": "You can refer the matter to the competent court."
+            }
+          }
+        }
+      },
+      "privacy": {
+        "meta": {
+          "title": "Data protection policy",
+          "description": "Personal data protection policy of the portal."
+        },
+        "hero": {
+          "kicker": "Personal data",
+          "title": "Data protection policy",
+          "lead": "How the ministry processes your personal data.",
+          "notice": "This policy may be updated."
+        },
+        "sections": {
+          "responsable": {
+            "kicker": "Controller",
+            "title": "Data controller",
+            "lead": "The ministry is the controller of the data processing.",
+            "paragraphs": {
+              "p1": "The ministry determines the purposes and means of processing the data collected on the portal."
+            },
+            "facts": {
+              "responsable": {
+                "label": "Controller",
+                "value": "Ministry of Defense and the Armed Forces"
+              },
+              "adresse": {
+                "label": "Address",
+                "value": "Ministry of Defense and the Armed Forces, Republic of Astoria"
+              },
+              "dpo": {
+                "label": "Data protection officer",
+                "value": "dpo@defense.gouv.aor"
+              }
+            }
+          },
+          "donnees": {
+            "kicker": "Data",
+            "title": "Data collected",
+            "lead": "Only the data necessary for the purposes pursued is collected.",
+            "bullets": {
+              "b1": "The identification data you enter in the forms.",
+              "b2": "The contact data needed to process your request.",
+              "b3": "Technical browsing data, where applicable.",
+              "b4": "Audience measurement data, if you have consented to it."
+            }
+          },
+          "finalites": {
+            "kicker": "Purposes",
+            "title": "Purposes and legal bases",
+            "lead": "Each processing operation pursues a specific purpose and relies on a legal basis.",
+            "paragraphs": {
+              "p1": "The processing operations carried out serve a public-interest mission or a legal obligation of the ministry.",
+              "p2": "Data is never used for purposes incompatible with those for which it was collected."
+            }
+          },
+          "conservation": {
+            "kicker": "Retention",
+            "title": "Retention period",
+            "lead": "Data is kept for a limited and proportionate period.",
+            "facts": {
+              "duree": {
+                "label": "Period",
+                "value": "Period necessary for the purpose pursued"
+              },
+              "critere": {
+                "label": "Criterion",
+                "value": "Legal obligations and administrative usefulness"
+              }
+            }
+          },
+          "droits": {
+            "kicker": "Rights",
+            "title": "Your rights",
+            "lead": "You have rights over your personal data.",
+            "bullets": {
+              "b1": "Right of access to your data.",
+              "b2": "Right to rectify inaccurate data.",
+              "b3": "Right to erasure in the cases provided for by the regulations.",
+              "b4": "Right to restriction of processing.",
+              "b5": "Right to object on legitimate grounds."
+            }
+          },
+          "cookies": {
+            "kicker": "Cookies",
+            "title": "Cookies and audience measurement",
+            "lead": "The portal uses cookies to operate and to measure its audience.",
+            "paragraphs": {
+              "p1": "You can change your cookie choices at any time."
+            },
+            "notice": "Non-essential cookies are only set with your consent.",
+            "cta": "Manage my preferences"
+          }
+        }
+      },
+      "terms": {
+        "meta": {
+          "title": "Terms of use",
+          "description": "Terms of use of the portal."
+        },
+        "hero": {
+          "kicker": "Use",
+          "title": "Terms of use",
+          "lead": "The rules applicable to the use of the portal.",
+          "notice": "Using the portal constitutes acceptance of these terms."
+        },
+        "sections": {
+          "objet": {
+            "kicker": "Purpose",
+            "title": "Purpose",
+            "lead": "These terms define the conditions for using the portal.",
+            "paragraphs": {
+              "p1": "The purpose of the portal is to inform the public about the ministry's action and to facilitate access to services and online procedures.",
+              "p2": "The publisher reserves the right to amend these terms at any time."
+            }
+          },
+          "utilisation": {
+            "kicker": "Use",
+            "title": "Use of the portal",
+            "lead": "Users undertake to use the portal in compliance with the regulations.",
+            "bullets": {
+              "b1": "Not to impair the operation or security of the portal.",
+              "b2": "Not to attempt to access unauthorized data.",
+              "b3": "Not to impersonate a third party.",
+              "b4": "Not to publish unlawful or misleading content."
+            }
+          },
+          "contenus": {
+            "kicker": "Content",
+            "title": "Content and data",
+            "lead": "The content published on the portal is protected by the applicable law.",
+            "paragraphs": {
+              "p1": "Unless otherwise stated, the content is made available under an open licence.",
+              "p2": "Personal data is processed in accordance with the data protection policy."
+            }
+          },
+          "responsabilite": {
+            "kicker": "Liability",
+            "title": "Liability",
+            "lead": "The ministry cannot be held liable for certain uses of the portal.",
+            "paragraphs": {
+              "p1": "The ministry strives to ensure the accuracy and availability of the information published, without guaranteeing the absence of errors or interruptions.",
+              "p2": "Links to third-party sites do not engage the liability of the ministry."
+            }
+          },
+          "liens": {
+            "kicker": "Links",
+            "title": "Links",
+            "lead": "Setting up links to the portal is governed by rules.",
+            "paragraphs": {
+              "p1": "Any link to the portal must comply with the conditions of use and must not mislead the public."
+            }
+          },
+          "modification": {
+            "kicker": "Amendment",
+            "title": "Amendment of the terms",
+            "lead": "These terms may be amended to reflect changes to the portal.",
+            "paragraphs": {
+              "p1": "The version in force is the one published on the portal on the date of your visit."
+            },
+            "notice": "You should check the terms of use regularly."
+          }
+        }
+      },
+      "cookies": {
+        "meta": {
+          "title": "Cookie management policy",
+          "description": "Cookie management policy of the portal."
+        },
+        "hero": {
+          "kicker": "Cookies",
+          "title": "Cookie management policy",
+          "lead": "The cookies set on your device and their purpose.",
+          "notice": "You can change your choices at any time."
+        },
+        "sections": {
+          "definition": {
+            "kicker": "Definition",
+            "title": "Definition",
+            "lead": "A cookie is a file placed on your device when you visit a site.",
+            "paragraphs": {
+              "p1": "Cookies are used in particular to operate the portal, remember your preferences and measure the audience.",
+              "p2": "You can configure cookies at any time from your browser or from the cookie management banner."
+            }
+          },
+          "cookiesDeposes": {
+            "kicker": "Cookies",
+            "title": "Cookies set",
+            "lead": "The table below lists the families of cookies used by the portal.",
+            "table": {
+              "caption": "Families of cookies set",
+              "headers": {
+                "0": "Category",
+                "1": "Purpose",
+                "2": "Duration"
+              },
+              "rows": {
+                "0": {
+                  "0": "Essential cookies",
+                  "1": "Portal operation and security",
+                  "2": "Session"
+                },
+                "1": {
+                  "0": "Preference cookies",
+                  "1": "Remembering your display choices",
+                  "2": "12 months"
+                },
+                "2": {
+                  "0": "Audience measurement cookies",
+                  "1": "Measuring portal traffic",
+                  "2": "13 months"
+                },
+                "3": {
+                  "0": "Third-party cookies",
+                  "1": "External services integrated into the portal",
+                  "2": "Depends on the service"
+                }
+              },
+              "note": "Non-essential cookies are only set with your consent."
+            }
+          },
+          "gestion": {
+            "kicker": "Management",
+            "title": "Cookie management",
+            "lead": "You can accept, refuse or delete cookies at any time.",
+            "bullets": {
+              "b1": "Set your choices from the cookie management banner.",
+              "b2": "Configure your browser to refuse cookies.",
+              "b3": "Delete cookies already placed on your device."
+            },
+            "notice": "Refusing non-essential cookies does not limit access to the portal's information."
+          }
+        }
+      }
+    }
+  }
+}

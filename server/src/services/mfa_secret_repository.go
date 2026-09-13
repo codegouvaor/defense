@@ -3,7 +3,7 @@ package services
 import (
 	"context"
 
-	"github.com/codegouvaor/justice/server/src/models"
+	"github.com/codegouvaor/defense/server/src/models"
 	"gorm.io/gorm"
 )
 

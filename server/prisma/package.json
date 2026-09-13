@@ -1,7 +1,7 @@
 {
-  "name": "@justice-gouv/prisma",
+  "name": "@defense-gouv/prisma",
   "version": "1.0.0",
-  "description": "Prisma schema and database layer for the Ministry of Justice Website Database Layer.",
+  "description": "Prisma schema and database layer for the Ministry of Defense Website Database Layer.",
   "private": true,
   "main": "schema.prisma",
   "scripts": {
