@@ -1,7 +1,7 @@
 {
-  "name": "justice-gouv",
+  "name": "defense-gouv",
   "version": "1.0.0",
-  "description": "The official digital platform of the Ministry of Justice of Astoria.",
+  "description": "The official digital platform of the Ministry of Defense of Astoria.",
   "private": true,
   "type": "module",
   "workspaces": [
@@ -68,7 +68,7 @@
   "packageManager": "pnpm@8.15.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/codegouvaor/justice.git"
+    "url": "https://github.com/codegouvaor/defense.git"
   },
   "keywords": [
     "news",
@@ -80,14 +80,14 @@
   ],
   "author": {
     "name": "Astoria Government Development Team",
-    "email": "developer@justice.gouv.aor",
-    "url": "https://justice.gouv.aor"
+    "email": "developer@defense.gouv.aor",
+    "url": "https://defense.gouv.aor"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/codegouvaor/justice/issues"
+    "url": "https://github.com/codegouvaor/defense/issues"
   },
-  "homepage": "https://github.com/codegouvaor/justice#readme",
+  "homepage": "https://github.com/codegouvaor/defense#readme",
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "eslint --fix --quiet",
